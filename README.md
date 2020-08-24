@@ -1,7 +1,7 @@
 # Eindopdracht
 Eindopdracht Web Developer cursus 2020
 
-<p> https://charlottelindberg.github.io/Eindopdracht/
+<p> Zie Screenshots aan het einde van de dag voor een visuele progress.
 
 Maandag 24/8: <br>
 Eerste week gemist door ziekte.
