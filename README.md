@@ -1,7 +1,7 @@
 # Eindopdracht
 Eindopdracht Web Developer cursus 2020
 
-<p> Zie Screenshots aan het einde van de dag voor een visuele progress.
+<p> Zie "screenshots aan het einde van de dag" voor een visuele progress.
 
 Maandag 24/8: <br>
 Eerste week gemist door ziekte.
