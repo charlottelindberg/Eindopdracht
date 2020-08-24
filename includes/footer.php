@@ -4,7 +4,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p>Copyright © MyWebsite. All rights reserved.</p>
+                    <p>Copyright © Cha-Lin 2K20
+                        <br>All rights reserved.
+                        <br>Eindwerk opleiding Web Developer - Obelisk / VDAB
+                    </p>
                 </div>
             </div>
         </div>
