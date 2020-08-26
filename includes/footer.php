@@ -1,12 +1,13 @@
     <!-- begin footer  -->
 
-    <footer class="text-center">
+    <footer class="text-center bg-secondary">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p>Copyright © Cha-Lin 2K20
-                        <br>All rights reserved.
-                        <br>Eindwerk opleiding Web Developer - Obelisk / VDAB
+                    <p>
+                        <br>
+                        Copyright © Cha-Lin 2k20 - All rights reserved.
+                        <br>Eindwerk opleiding Web Developer - Obelisk / VDAB / Multimedi
                     </p>
                 </div>
             </div>
