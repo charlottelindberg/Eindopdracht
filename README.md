@@ -1,16 +1,16 @@
 # Eindopdracht
-Eindopdracht Web Developer cursus 2020
+<b>Eindopdracht Web Developer cursus 2020<b/>
 
 <p> Zie "screenshots aan het einde van de dag" voor een visuele progress.
 
-Maandag 24/8: <br>
+<b>Maandag 24/8</b>: <br>
 Eerste week gemist door ziekte.
 <p>De allereerste stappen genomen. Heb een Boostrap template via Adobe gevonden dat ik zal gebruiken.
 <br>Ik heb de code in stukjes verdeeld, en de folder "Includes" gemaakt, om de stappen naar PHP te zetten.
 <br>Kleurenschema voor Bootstrap veranderd, en de default fonts.
 <p>Meeste tijd gespendeerd op de zoek-functie.
   
-<p>Woensdag 25/8:
+<p><b>Woensdag 25/8</b>:
  <br>Heel veel tijd gespendeerd met Google API. De code zou moeten werken, maar het lukte gewoon niet. 
   <br>Uiteindelijk de extentie PHP Intellisense in VSC uitgezet, en voila.
   <p>De rest van de dag in de backend gewerkt om een upload van bestanden pagina te schrijven. Werkt nog niet.
