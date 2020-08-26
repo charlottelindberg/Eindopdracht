@@ -1,5 +1,5 @@
 # Eindopdracht
-<b>Eindopdracht Web Developer cursus 2020<b/>
+<b>Eindopdracht Web Developer cursus 2020</b>
 
 <p> Zie "screenshots aan het einde van de dag" voor een visuele progress.
 
