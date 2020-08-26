@@ -14,3 +14,4 @@ Eerste week gemist door ziekte.
  <br>Heel veel tijd gespendeerd met Google API. De code zou moeten werken, maar het lukte gewoon niet. 
   <br>Uiteindelijk de extentie PHP Intellisense in VSC uitgezet, en voila.
   <p>De rest van de dag in de backend gewerkt om een upload van bestanden pagina te schrijven. Werkt nog niet.
+    <br>Geen screenshot genomen; geen visuele progress te tonen.
