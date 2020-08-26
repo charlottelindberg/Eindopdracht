@@ -10,7 +10,7 @@ Eerste week gemist door ziekte.
 <br>Kleurenschema voor Bootstrap veranderd, en de default fonts.
 <p>Meeste tijd gespendeerd op de zoek-functie.
   
-<p><b>Woensdag 25/8</b>:
+<p><b>Woensdag 26/8</b>:
  <br>Heel veel tijd gespendeerd met Google API. De code zou moeten werken, maar het lukte gewoon niet. 
   <br>Uiteindelijk de extentie PHP Intellisense in VSC uitgezet, en voila.
   <p>De rest van de dag in de backend gewerkt om een upload van bestanden pagina te schrijven. Werkt nog niet.
