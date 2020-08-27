@@ -20,3 +20,4 @@ Eerste week gemist door ziekte.
   <br>Vrije studiedag.
   <p>Admin stuk van de BlogOOP opdracht toegevoegd. 
     <br>Deze admin gedeelte past perfect in de kader van wat ik op voorhand had geplanned, en ik wens de User en Photo secties te herbruiken/modifieren voor mijn eindwerk.
+<p>Veel fotos van pexels.com van verschillende dieren gezocht, downloaded en in mapjes verdeeld.
