@@ -15,3 +15,8 @@ Eerste week gemist door ziekte.
   <br>Uiteindelijk de extentie PHP Intellisense in VSC uitgezet, en voila.
   <p>De rest van de dag in de backend gewerkt om een upload van bestanden pagina te schrijven. Werkt nog niet.
     <br>Geen screenshot genomen; geen visuele progress te tonen.
+
+<p><b>Donderdag 27/8</b>:
+  <br>Vrije studiedag.
+  <p>Admin stuk van de BlogOOP opdracht toegevoegd. 
+    <br>Deze admin gedeelte past perfect in de kader van wat ik op voorhand had geplanned, en ik wens de User en Photo secties te herbruiken/modifieren voor mijn eindwerk.
