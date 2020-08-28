@@ -29,3 +29,5 @@ Eerste week gemist door ziekte.
   <br>Carousel = toegevoegd.
   <br>foto container = uitgebreid naar 3 rows.
   <br>nav-tabs = met text gevuld, en de juiste id-names toegevoegd.
+
+<p>Zie "screenshot-einde-van-de-dag-28-8.png" voor visuele progress.
