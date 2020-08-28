@@ -10,9 +10,9 @@ include("includes/header.php");
     <p>Momenteel zijn er <strong>709</strong> dieren beschikkbaar voor adoptie!</p>
     <p></p>
 </div>
-<!-- end jumbotron  -->
+<!-- eind jumbotron  -->
 
-<!-- begin search bar  -->
+<!-- begin search bar - dieren -->
 <div class="container justify-content-center">
     <form action="#" method="post" novalidate="novalidate">
         <div class="row justify-content-md-center">
@@ -54,10 +54,9 @@ include("includes/header.php");
         </div>
 </div>
 <p></p>
-<!-- end search bar  -->
+<!-- eind search bar - dieren  -->
 
-<!-- start hero carousel -->
-
+<!-- begin hero carousel -->
 <div class="pb-5 container mt-3">
     <div class="row">
         <div class="col-12">
@@ -104,14 +103,11 @@ include("includes/header.php");
             </div>
         </div>
     </div>
-    <!-- <hr> -->
 </div>
+<!-- eind hero carousel  -->
 
-<!-- end hero carousel  -->
 
-
-<!-- start recently added section  -->
-
+<!-- begin recently added sectie  -->
 <section class="bg-light">
     <div class="container">
         <div class="row">
@@ -157,12 +153,10 @@ include("includes/header.php");
                 </div>
                 <hr>
             </div>
+<!-- eind recently added sectie -->
 
-            <!-- end recently added section -->
 
-
-            <!-- info tabs x3  -->
-
+<!-- begin dieren info - tabs  -->
             <div class="col-md-6 col-12">
                 <h3 class="pt-3 text-center">
                     Houden van huisdieren
@@ -186,53 +180,51 @@ include("includes/header.php");
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                         <!-- <p class="text-center mt-2"><img src="images/3b536b.gif" alt=""></p> -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit
-                            voluptates
-                            aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur
-                            adipisicing
-                            elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut
-                            deserunt ipsa est
-                            tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor
-                            sit amet,
-                            consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae
-                            voluptatem qui
-                            consequuntur magni? Deleniti, corporis.</p>
+                        <p>
+                        <ul>
+                        <li>Heb je de ruimte en de tijd om een hond dagelijks vrij buiten te laten bewegen?</li>
+                        <li>Ga je graag wandelen, ook als het regent of koud is?</li>  
+                        <li>Wil je dagelijks de uitwerpselen opruimen en/of de hond zindelijk maken?</li> 
+                        <li>Ben je bereid om per maand 85 euro kosten (per jaar 700 - 1300 euro) te betalen ?</li>
+                        <li>Wil je de komende 10 – 20 jaar voor de hond zorgen?</li>
+                        <li>Heb je een oplossing voor de hond als je op vakantie gaat of een lange dag weg ben?</li>
+                        <li>Kan je er tegen dat de hond veel vuil maakt of soms iets stuk maakt?</li>
+                        <li>Heb je genoeg ruimte binnen en/of is de tuin hoog genoeg omheind?</li>
+                        </ul>
+                        Als je op één van deze vragen nee  antwoordt, dan is de adoptie van een hond misschien toch geen goed idee.
+                        </p>
+                        
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         <!-- <p class="text-center mt-2"><img src="images/3b536b.gif" alt=""></p> -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit
-                            voluptates
-                            aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur
-                            adipisicing
-                            elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut
-                            deserunt ipsa est
-                            tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor
-                            sit amet,
-                            consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae
-                            voluptatem qui
-                            consequuntur magni? Deleniti, corporis.</p>
+                        <p>
+                        Voorkom probleemgedrag en schade aan de meubels door je huis katvriendelijk in te richten. Van alle benodigdheden heb je er één meer nodig dan het aantal katten in huis. Voor één kat zijn er dus twee kattenbakken nodig, voor twee katten drie kattenbakken enzovoort.
+                        <p>
+                        Zet alle kattenspullen verspreid in huis neer. Zet bijvoorbeeld niet alle kattenbakken bij elkaar in de berging. Zo voorkom je dat één kat de toegang naar de kattenbakken voor de andere katten kan blokkeren door voor de deur te gaan zitten.
+                        </p>
+                        Het voer en het drinken mogen niet in de buurt van de kattenbak staan. Dit kan er toe   leiden dat de kat zijn behoefte op ongewenste plaatsen in huis doet. Zorg ook dat het voer en het drinken niet naast mekaar staan: laat er minstens 1,5 meter tussen. Katten houden er niet van om te drinken in de buurt van hun eten. Daardoor drinken ze soms te weinig, wat de kans op blaasproblemen verhoogt.
+                        </p>
                     </div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                         <!-- <p class="text-center mt-2"><img src="images/3b536b.gif" alt=""></p> -->
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime aut ea impedit
-                            voluptates
-                            aperiam dolor laborum officiis autem aspernatur! Lorem ipsum dolor sit amet, consectetur
-                            adipisicing
-                            elit. Delectus, alias, repudiandae sunt illo consequatur aperiam doloribus nesciunt ut
-                            deserunt ipsa est
-                            tempora nihil. Totam eveniet aperiam debitis fugit ipsa doloremque. Lorem ipsum dolor
-                            sit amet,
-                            consectetur adipisicing elit. Optio sequi dolorem suscipit assumenda molestiae
-                            voluptatem qui
-                            consequuntur magni? Deleniti, corporis.</p>
+                        <p>
+                        In tegenstelling tot wat vaak wordt gedacht, zijn konijnen <strong> geen goede huisdieren voor kinderen</strong>. De meeste konijnen vinden oppakken en knuffelen niet leuk. Ze kunnen dan krabben en bijten en zelfs hun eigen rug breken als ze spartelen bij het optillen. 
+                        <p>
+                        Door veel tijd aan het konijn te besteden en er rustig mee om te gaan, kan het wel tam worden en leren dat aaien prettig kan zijn. Konijnen kunnen ook allerlei trucjes leren en er wordt zelfs aan konijnen-agility gedaan. Konijnen zijn dus vooral leuke huisdieren voor mensen die er ofwel veel mee willen bezig zijn, ofwel er vooral willen naar kijken.</p>
+                        </p>
+                        <p>
+                        Konijnen hebben veel ruimte nodig. Combineer een hok of kooi met een grote (buiten)ren en richt deze in met veel verstopplekjes en verschillende niveaus.
+                        </p>
+                        <p>
+                        Een konijn is een groepsdier. <strong> Hou er minstens twee</strong>. De combinatie van een vrouwelijk konijn en een gecastreerd mannelijk konijn gaat het best. Twee mannetjes of twee vrouwtjes samen geeft meestal ruzie. 
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!-- info tabs x3  -->
+<!-- einde dieren info - tabs  -->
 
 
 <?php
