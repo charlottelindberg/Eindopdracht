@@ -165,7 +165,7 @@ include("includes/header.php");
 
             <div class="col-md-6 col-12">
                 <h3 class="pt-3 text-center">
-                    Over het houden van huisdieren
+                    Houden van huisdieren
                 </h3>
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -179,8 +179,8 @@ include("includes/header.php");
                             role="tab" aria-controls="nav-contact" aria-selected="false">Paarden</a>
                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
                             role="tab" aria-controls="nav-contact" aria-selected="false">Vogels</a>
-                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
-                            role="tab" aria-controls="nav-contact" aria-selected="false">Reptielen</a>
+                        <!-- <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                            role="tab" aria-controls="nav-contact" aria-selected="false">Reptielen</a> -->
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
