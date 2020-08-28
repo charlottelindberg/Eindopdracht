@@ -188,7 +188,7 @@ include("includes/header.php");
                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
                             role="tab" aria-controls="nav-contact" aria-selected="false">Konijnen</a>
                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
-                            role="tab" aria-controls="nav-contact" aria-selected="false">Paarden</a>
+                            role="tab" aria-controls="nav-contact" aria-selected="false">Kippen</a>
                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
                             role="tab" aria-controls="nav-contact" aria-selected="false">Vogels</a>
                     </div>
@@ -230,6 +230,16 @@ include("includes/header.php");
                         </p>
                         <p>
                         Een konijn is een groepsdier. <strong> Hou er minstens twee</strong>. De combinatie van een vrouwelijk konijn en een gecastreerd mannelijk konijn gaat het best. Twee mannetjes of twee vrouwtjes samen geeft meestal ruzie. 
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <p>
+                        
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <p>
+                        Kippen bestaan in veel maten, kleuren en temperamenten. Er zijn rassen die vooral geschikt zijn om veel eieren te leggen en andere worden vooral gehouden voor het vlees of voor de sierwaarde. Naast echte raskippen worden er ook veel kruisingen gekweekt, de hybriden. Deze hybriden geven een veel grotere opbrengst van eieren of vlees dan de zuivere rassen en worden daarom veel in de industrie gebruikt. Ook de meeste legkippen die je in de dierenwinkel kan kopen, zijn hybriden. Ze leven doorgaans echter minder lang en zijn minder sterk dan de zuivere raskippen.
                         </p>
                     </div>
                 </div>
