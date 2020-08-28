@@ -16,7 +16,6 @@ include("includes/header.php");
 <div class="container justify-content-center">
     <form action="#" method="post" novalidate="novalidate">
         <div class="row justify-content-md-center">
-            <!-- <div class="col col-lg-2"> -->
             <div class="col-md-auto align-content-stretch flex-wrap">
                 <button type="button" class="btn btn-secondary">Ik zoek: </button>
                 <p></p>
@@ -45,13 +44,12 @@ include("includes/header.php");
                     <option>Vlaams-Brabant</option>
                 </select>
             </div>
-
-            <!-- <div class="col col-lg-2"> -->
             <div class="col-md-auto align-content-stretch flex-wrap">
                 <button type="button" class="btn btn-secondary">Zoeken →</button>
                 <p></p>
             </div>
         </div>
+    </form>
 </div>
 <p></p>
 <!-- eind search bar - dieren  -->
@@ -152,6 +150,23 @@ include("includes/header.php");
                     </div>
                 </div>
                 <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
+                                alt="Thumbnail Image 1">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
+                                alt="Thumbnail Image 1">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
+                                alt="Thumbnail Image 1">
+                        </div>
+                    </div>
+                </div>
             </div>
 <!-- eind recently added sectie -->
 
@@ -159,7 +174,7 @@ include("includes/header.php");
 <!-- begin dieren info - tabs  -->
             <div class="col-md-6 col-12">
                 <h3 class="pt-3 text-center">
-                    Houden van huisdieren
+                    Zorgen voor huisdieren
                 </h3>
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -173,13 +188,10 @@ include("includes/header.php");
                             role="tab" aria-controls="nav-contact" aria-selected="false">Paarden</a>
                         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
                             role="tab" aria-controls="nav-contact" aria-selected="false">Vogels</a>
-                        <!-- <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
-                            role="tab" aria-controls="nav-contact" aria-selected="false">Reptielen</a> -->
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <!-- <p class="text-center mt-2"><img src="images/3b536b.gif" alt=""></p> -->
                         <p>
                         <ul>
                         <li>Heb je de ruimte en de tijd om een hond dagelijks vrij buiten te laten bewegen?</li>
@@ -196,7 +208,6 @@ include("includes/header.php");
                         
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <!-- <p class="text-center mt-2"><img src="images/3b536b.gif" alt=""></p> -->
                         <p>
                         Voorkom probleemgedrag en schade aan de meubels door je huis katvriendelijk in te richten. Van alle benodigdheden heb je er één meer nodig dan het aantal katten in huis. Voor één kat zijn er dus twee kattenbakken nodig, voor twee katten drie kattenbakken enzovoort.
                         <p>
@@ -206,7 +217,6 @@ include("includes/header.php");
                         </p>
                     </div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        <!-- <p class="text-center mt-2"><img src="images/3b536b.gif" alt=""></p> -->
                         <p>
                         In tegenstelling tot wat vaak wordt gedacht, zijn konijnen <strong> geen goede huisdieren voor kinderen</strong>. De meeste konijnen vinden oppakken en knuffelen niet leuk. Ze kunnen dan krabben en bijten en zelfs hun eigen rug breken als ze spartelen bij het optillen. 
                         <p>
