@@ -24,6 +24,7 @@ Eerste week gemist door ziekte.
 
 <p><b>Vrijdag 28/8</b>:
   <br>Aan index.php gewerkt.
+  <br>Kleurenschema in Bootstrap verandered.
   <p>Navbar = logo gemaakt, links updated.
   <br>Zoekbar = mooier gemaakt :)
   <br>Carousel = toegevoegd.
