@@ -80,7 +80,7 @@ include("includes/header.php");
                         <img class="d-block w-100" src="http://placeimg.com/1920/500/animals" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block">
                             <h5 class="bg-dark text-white">Snowball
-                                <p>Twee jaar oud</p>
+                                <p>Twee  oud</p>
                             </h5>
                         </div>
                     </div>
