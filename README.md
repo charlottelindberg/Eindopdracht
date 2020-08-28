@@ -21,3 +21,11 @@ Eerste week gemist door ziekte.
   <p>Admin stuk van de BlogOOP opdracht toegevoegd. 
     <br>Deze admin gedeelte past perfect in de kader van wat ik op voorhand had geplanned, en ik wens de User en Photo secties te herbruiken/modifieren voor mijn eindwerk.
 <p>Veel fotos van pexels.com van verschillende dieren gezocht, downloaded en in mapjes verdeeld.
+
+<p><b>Vrijdag 28/8</b>:
+  <br>Aan index.php gewerkt.
+  <br>Navbar = logo gemaakt, links updated.
+  <br>Zoekbar = mooier gemaakt :)
+  <br>Carousel = toegevoegd.
+  <br>foto container = uitgebreid naar 3 rows.
+  <br>nav-tabs = met text gevuld, en de juiste id-names toegevoegd.
