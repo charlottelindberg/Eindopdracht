@@ -7,11 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vind een dier!</title>
 
+    <!-- favicon -->
+    <!-- <link rel="icon" href="/favicon.ico">  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap-mint.css" rel="stylesheet">
 
     <!-- eigen CSS  -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- eigen JS  -->
+    <link rel="script" href="/js/javascript.js">
 </head>
 
 <body>
@@ -28,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    <a class="nav-link dropdown-toggle text-black-50" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dierenasielen
                     </a>
@@ -39,7 +52,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    <a class="nav-link dropdown-toggle text-black-50" href="#" id="navbarDropdownMenuLink" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dierensoorten
                     </a>
@@ -55,5 +68,4 @@
             </span>
         </div>
     </nav>
-
     <!-- end Navbar  -->
