@@ -1,4 +1,4 @@
-.filterDiv {
+/* .filterDiv {
     float: left;
     background-color: #2196F3;
     color: #ffffff;
@@ -18,7 +18,7 @@
     overflow: hidden;
   }
   
-  /* Style the buttons */
+  Style the buttons
   .btn {
     border: none;
     outline: none;
@@ -34,4 +34,4 @@
   .btn.active {
     background-color: #666;
     color: white;
-  }
+  } */
