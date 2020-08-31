@@ -32,3 +32,8 @@ Eerste week gemist door ziekte.
   <br>nav-tabs = met text gevuld, en de juiste id-names toegevoegd.
 
 <p>Zie "screenshot-einde-van-de-dag-28-8.png" voor visuele progress.
+
+<p><b>Maandag 31/8</b>:
+  <br>Pagina dier-zoeken.php gemaakt.
+  <br>Meeste tijd gespendeerd om de twee selector/finder functies werken te krijgen.
+  <p>Favicons gedaan.
