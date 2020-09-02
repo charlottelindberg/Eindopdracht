@@ -37,3 +37,9 @@ Eerste week gemist door ziekte.
   <br>Pagina dier-zoeken.php gemaakt.
   <br>Meeste tijd gespendeerd om de twee selector/finder functies werken te krijgen.
   <p>Favicons gedaan.
+
+<p><b>Woensdag 02/09</b>:
+  <br>Nieuwe versies van index.php en header.php gemaakt, voor verschillende design-opties. 
+  <br>index02.php ziet het best uit in responsive design mode van de drie, en zal waarschinlijk het eind resultaat worden.
+  <p>Verder aan de filter functie gewerkt. 
+    <br>Een voorbeeld van W3C Schools genomen dat ik nu verder mee ga werken.
