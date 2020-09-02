@@ -13,6 +13,7 @@ include("includes/header.php");
 </div>
 <!-- end jumbotron  -->
 
+
 <!-- begin search bar - dieren -->
 <div class="container justify-content-center">
     <form action="dier-zoeken.php" method="post" novalidate="novalidate">
@@ -46,7 +47,6 @@ include("includes/header.php");
                 </select>
             </div>
             <div class="col-md-auto align-content-stretch flex-wrap">
-                <!-- <button type="button" class="btn btn-secondary" type="submit">Zoeken →</button> -->
                 <a href="dier-zoeken.php" class="btn btn-secondary">Zoeken →</a>
                 <p></p>
             </div>
