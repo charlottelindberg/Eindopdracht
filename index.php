@@ -196,19 +196,15 @@ include("includes/header.php");
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <p>
-                        <ul>
-                        <li>Heb je de ruimte en de tijd om een hond dagelijks vrij buiten te laten bewegen?</li>
-                        <li>Ga je graag wandelen, ook als het regent of koud is?</li>  
-                        <li>Wil je dagelijks de uitwerpselen opruimen en/of de hond zindelijk maken?</li> 
-                        <li>Ben je bereid om per maand 85 euro kosten (per jaar 700 - 1300 euro) te betalen ?</li>
-                        <li>Wil je de komende 10 – 20 jaar voor de hond zorgen?</li>
-                        <li>Heb je een oplossing voor de hond als je op vakantie gaat of een lange dag weg ben?</li>
-                        <li>Kan je er tegen dat de hond veel vuil maakt of soms iets stuk maakt?</li>
-                        <li>Heb je genoeg ruimte binnen en/of is de tuin hoog genoeg omhend?</li>
-                        </ul>
-                        Als je op één van deze vragen nee  antwoordt, dan is de adoptie van een hond misschien toch geen goed idee.
-                        </p>
+                    <p>
+                            De hond moet voldoende ruimte hebben om te lopen, te spelen en om zijn behoefte te doen. De huisvesting moet veilig zijn en de hond beschermen tegen koude en hitte. Een droge en comfortabele slaapplaats is verplicht. 
+                            </p>
+                            <p>
+                            Een hond is een sociaal dier. Als je één hond hebt, zorg dan voor bekende en bevriende honden als vaste speel- en wandelpartners. Als je een hond een lange tijd alleen laat, dan kan hij ten prooi vallen aan stress en verveling.
+                            </p>
+                            <p>
+                            Honden hebben als ontspanning afwisselende activiteiten nodig. Ze moeten kunnen snuffelen, lopen, graven, zwemmen en onderzoeken. Laat de hond dagelijks uit aan een comfortabel tuig en een lange leiband. Laat de hond loslopen waar het mogelijk en toegelaten is, bijvoorbeeld op een hondenweide.
+                            </p>
                         
                     </div>
                     <div class="tab-pane fade" id="nav-katten" role="tabpanel" aria-labelledby="nav-katten-tab">
