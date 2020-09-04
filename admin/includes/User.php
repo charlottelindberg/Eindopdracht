@@ -3,18 +3,18 @@
 
 class User extends Db_object
 {
-    protected static $db_table = "user";
-    protected static $db_table_fields = array('username', 'password', 'first_name', 'last_name', 'user_image');
-    public $id;
-    public $username;
-    public $password;
-    public $first_name;
-    public $last_name;
-    public $user_image;
+    protected static $db_table = "gebruikers";
+    protected static $db_table_fields = array('Username', 'Password', 'Naam', 'Adres', 'Status', 'GebruikerFoto');
+    public $GebruikerID;
+    public $Username;
+    public $Password;
+    public $Naam;
+    public $Adres;
+    public $GebruikerFoto;
     public $upload_directory = 'img' . DS . 'users';
 
-    public $type;
-    public $size;
+    // public $type;
+    // public $size;
 
     public $tmp_path;
 
@@ -24,12 +24,12 @@ class User extends Db_object
 
     public static function verify_user($user, $pass){
         global $database;
-        $username = $database->escape_string($user);
-        $password = $database->escape_string($pass);
+        $Username = $database->escape_string($user);
+        $Password = $database->escape_string($pass);
 
         $sql = "SELECT * FROM " . self::$db_table . " WHERE ";
-        $sql .= "username = '{$username}' ";
-        $sql .= "AND password = '{$password}' ";
+        $sql .= "Username = '{$Username}' ";
+        $sql .= "AND Password = '{$Password}' ";
         $sql .= "LIMIT 1";
 
         $the_result_array = self::find_this_query($sql);
@@ -37,7 +37,7 @@ class User extends Db_object
     }
 
     public function image_path_and_placeholder(){
-        return empty($this->user_image) ? $this->image_placeholder : $this->upload_directory.DS.$this->user_image;
+        return empty($this->GebruikerFoto) ? $this->image_placeholder : $this->upload_directory.DS.$this->GebruikerFoto;
     }
 
     public function set_file($file){
@@ -48,26 +48,26 @@ class User extends Db_object
             $this->errors[] = $this->upload_errors_array[$file['error']];
             return false;
         }else{
-            $this->user_image = basename($file['name']);
+            $this->GebruikerFoto = basename($file['name']);
             $this->tmp_path = $file['tmp_name'];
-            $this->type = $file['type'];
-            $this->size = $file['size'];
+            // $this->type = $file['type'];
+            // $this->size = $file['size'];
         }
     }
 
     public function save_user_and_image(){
-        $target_path = SITE_ROOT . DS . "admin" . DS . $this->upload_directory . DS . $this->user_image;
+        $target_path = SITE_ROOT . DS . "admin" . DS . $this->upload_directory . DS . $this->GebruikerFoto;
 
             if(!empty($this->errors)){
                 return false;
             }
-            if(empty($this->user_image) || empty($this->tmp_path)){
+            if(empty($this->GebruikerFoto) || empty($this->tmp_path)){
                 $this->errors[] = "File not available";
                 return false;
             }
 
             if(file_exists($target_path)){
-                $this->errors[] = "File {$this->user_image} exists";
+                $this->errors[] = "File {$this->GebruikerFoto} exists";
                 return false;
             }
             if(move_uploaded_file($this->tmp_path, $target_path)){
