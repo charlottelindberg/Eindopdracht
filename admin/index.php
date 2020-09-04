@@ -11,7 +11,9 @@ $aantalPhotos = Photo::find_all();
 
 <?php include("includes/sidebar.php"); ?>
 
-<?php include("includes/content-top.php");?>
+<?php 
+include("includes/content-top.php");
+?>
 
 <?php include("includes/content.php"); ?>
 
