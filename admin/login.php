@@ -9,20 +9,20 @@ if($session->is_signed_in()){
 }
 
 if(isset($_POST['submit'])){
-    $username = trim($_POST['username']);
-    $password = trim($_POST['password']);
+    $Username = trim($_POST['Username']);
+    $Password = trim($_POST['Password']);
 
-    $user_found = User::verify_user($username, $password);
+    $user_found = User::verify_user($Username, $Password);
 
     if($user_found){
         $session->login($user_found);
         redirect("index.php");
     }else{
-        $the_message = "Your password of username FAILED";
+        $the_message = "Your Password of Username FAILED";
     }
 }else{
-    $username = "";
-    $password = "";
+    $Username = "";
+    $Password = "";
 }
 ?>
 
@@ -48,12 +48,12 @@ if(isset($_POST['submit'])){
                     <h2 class="bg-danger"><?php echo $the_message; ?></h2>
                   <form class="user" method="post">
                     <div class="form-group">
-                        <label for="username">Username:</label>
-                      <input type="text" name="username" value="<?php echo htmlentities($username); ?>" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter username ...">
+                        <label for="Username">Username:</label>
+                      <input type="text" name="Username" value="<?php echo htmlentities($Username); ?>" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Username ...">
                     </div>
                     <div class="form-group">
-                        <label for="password">Password:</label>
-                      <input type="password" name="password" value="<?php echo htmlentities($password); ?>" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                        <label for="Password">Password:</label>
+                      <input type="Password" name="Password" value="<?php echo htmlentities($Password); ?>" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
                     </div>
                     <div class="form-group">
                       <div class="custom-control custom-checkbox small">
@@ -67,7 +67,7 @@ if(isset($_POST['submit'])){
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="forgot-password.html">Forgot Password?</a>
+                    <a class="small" href="forgot-Password.html">Forgot Password?</a>
                   </div>
                   <div class="text-center">
                     <a class="small" href="register.html">Create an Account!</a>
