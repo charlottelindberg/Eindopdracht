@@ -11,7 +11,7 @@
   margin-inline-start: 7vw;
 }
 
-  .filterSelection {
+  .btnFilterSelection {
   float: left;
   background-color: #f3969a;
   color: #884b60;
@@ -66,21 +66,21 @@
   <button class="btnFilter" onclick="filterSelection('anderen')"> Andere dierensoorten</button>
 </div>
 
-<!-- <div class="container">
-  <div class="filterSelection cars">BMW</div>
-  <div class="filterSelection colors fruits">Orange</div>
-  <div class="filterSelection cars">Volvo</div>
-  <div class="filterSelection colors">Red</div>
-  <div class="filterSelection cars animals">Mustang</div>
-  <div class="filterSelection colors">Blue</div>
-  <div class="filterSelection animals">Cat</div>
-  <div class="filterSelection animals">Dog</div>
-  <div class="filterSelection fruits">Melon</div>
-  <div class="filterSelection fruits animals">Kiwi</div>
-  <div class="filterSelection fruits">Banana</div>
-  <div class="filterSelection fruits">Lemon</div>
-  <div class="filterSelection animals">Cow</div>
-</div> -->
+<div class="container">
+  <div class="btnFilterSelection honden">Border Collie</div>
+  <div class="btnFilterSelection katten">Angora</div>
+  <div class="btnFilterSelection honden">Duitse Herder</div>
+  <div class="btnFilterSelection katten">Sphynx</div>
+  <div class="btnFilterSelection honden">Mustang</div>
+  <div class="btnFilterSelection katten">Siamees</div>
+  <div class="btnFilterSelection konijnen">Vlaamse Reus</div>
+  <div class="btnFilterSelection konijnen">Blauwe Ham</div>
+  <div class="btnFilterSelection vogels">Flamingo</div>
+  <div class="btnFilterSelection konijnen">Dwerg Rex</div>
+  <div class="btnFilterSelection vogels">Parakeet</div>
+  <div class="btnFilterSelection vogels">Papegaai</div>
+  <div class="btnFilterSelection konijnen">Hollander</div>
+</div>
 
 
 <script>
@@ -89,7 +89,7 @@
 filterSelection("all")
     function filterSelection(c) {
       var x, i;
-      x = document.getElementsByClassName("filterSelection");
+      x = document.getElementsByClassName("btnFilterSelection");
       if (c == "all") c = "";
       for (i = 0; i < x.length; i++) {
         RemoveClass(x[i], "show");
@@ -118,9 +118,8 @@ filterSelection("all")
       element.className = arr1.join(" ");
     }
     
-    // Add active class to the current button (highlight it)
     var btnContainer = document.getElementById("myBtnContainer");
-    var btns = btnContainer.getElementsByClassName("btn");
+    var btns = btnContainer.getElementsByClassName("btnFilterSelection");
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function(){
         var current = document.getElementsByClassName("active");
