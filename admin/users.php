@@ -3,7 +3,7 @@
 if(!$session->is_signed_in()){
     redirect('login.php');
 }
-$users = User::find_all();
+$gebruikers = User::find_all();
 ?>
 
 <?php include("includes/sidebar.php"); ?>
@@ -13,32 +13,32 @@ $users = User::find_all();
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <h2>USERS</h2>
-            <td><a href="add_user.php" class="btn btn-primary rounded-0"><i class="fas fa-user-plus"></i> Add User</a></td>
+            <h2>Gebruiker toevoegen</h2>
+            <td><a href="add_user.php" class="btn btn-primary rounded-0"><i class="fas fa-user-plus"></i> Gebruiker Toevoegen</a></td>
             <table class="table table-header">
                 <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Photo</th>
+                    <th>ID</th>
+                    <th>Foto</th>
                     <th>Username</th>
-                    <th>First name</th>
-                    <th>Last Name</th>
+                    <th>Naam</th>
+                    <th>Adres</th>
                     <th>Wijzig?</th>
-                    <th>Delete?</th>
+                    <th>Verwijderen?</th>
                 </tr>
                 </thead>
                 <tbody>
-                <?php foreach ($users as $user): ?>
+                <?php foreach ($gebruikers as $user): ?>
                     <tr>
-                        <td><?php echo $user->id; ?></td>
+                        <td><?php echo $user->GebruikerID; ?></td>
                         <td><img src="<?php echo $user->image_path_and_placeholder(); ?>" height="40" width="40" alt=""></td>
 
-                        <td><?php echo $user->username; ?></td>
-                        <td><?php echo $user->first_name; ?></td>
-                        <td><?php echo $user->last_name; ?></td>
-                        <td><a href="edit_user.php?id=<?php echo $user->id; ?>"
+                        <td><?php echo $user->Username; ?></td>
+                        <td><?php echo $user->Naam; ?></td>
+                        <td><?php echo $user->Adres; ?></td>
+                        <td><a href="edit_user.php?id=<?php echo $user->GebruikerID; ?>"
                                class="btn btn-danger rounded-0"><i class="fas fa-edit"></i></a></td>
-                        <td><a href="delete_user.php?id=<?php echo $user->id; ?>"
+                        <td><a href="delete_user.php?id=<?php echo $user->GebruikerID; ?>"
                                class="btn btn-danger rounded-0"><i class="fas fa-trash-alt"></i></a></td>
                     </tr>
                 <?php endforeach; ?>
