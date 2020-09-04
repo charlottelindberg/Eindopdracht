@@ -43,3 +43,9 @@ Eerste week gemist door ziekte.
   <br>index02.php ziet het best uit in responsive design mode van de drie, en zal waarschinlijk het eind resultaat worden.
   <p>Verder aan de filter functie gewerkt. 
     <br>Een voorbeeld van W3C Schools genomen dat ik nu verder mee ga werken.
+    
+<p><b>Vrijdag 04/09</b>:
+  <br>Verder met de finder functie gewerkt.
+  <br><img src=Screenshot-einde-van-de-dag-04-09.png width=”100"></img>
+    <p>Begonnen met de Admin / PHP stuk.
+<br><img src=Screenshot-einde-van-de-dag-04-09-2.png width=”100"></img>
