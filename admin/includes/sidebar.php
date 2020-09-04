@@ -4,9 +4,9 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
         <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+            <!-- <i class="fas fa-laugh-wink"></i> -->
         </div>
-        <div class="sidebar-brand-text mx-3">Blog OOP</div>
+        <div class="sidebar-brand-text mx-3">Vind een dier</div>
     </a>
 
     <!-- Divider -->
@@ -14,7 +14,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="index.php">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -32,8 +32,8 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="users.php">All users</a>
-                <a class="collapse-item" href="create_user.php">Create user</a>
+                <a class="collapse-item" href="users.php">Alle gebruikers</a>
+                <a class="collapse-item" href="add_user.php">Gebruiker toevoegen</a>
             </div>
         </div>
     </li>
@@ -41,7 +41,7 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="upload.php">
 
             <span>Upload</span>
             <i class="fas fa-upload"></i></a>
@@ -52,7 +52,7 @@
     <li class="nav-item">
         <a class="nav-link" href="photos.php">
 
-            <span>Photos</span>
+            <span>Fotos</span>
             <i class="fas fa-camera"></i></a>
 
     </li>
@@ -61,7 +61,7 @@
     <li class="nav-item">
         <a class="nav-link" href="comments.php">
 
-            <span>Comments</span>
+            <span>Kommentaren</span>
             <i class="fas fa-comments"></i></a>
 
     </li>
