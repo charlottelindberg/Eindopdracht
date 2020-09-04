@@ -64,7 +64,7 @@
 </div>
 <!-- end Filter Selection Top  -->
 
-<div class="container">
+<!-- <div class="container">
   <div class="btnFilterSelection honden">Border Collie</div>
   <div class="btnFilterSelection katten">Angora</div>
   <div class="btnFilterSelection honden">Duitse Herder</div>
@@ -78,7 +78,7 @@
   <div class="btnFilterSelection vogels">Parakeet</div>
   <div class="btnFilterSelection vogels">Papegaai</div>
   <div class="btnFilterSelection konijnen">Hollander</div>
-</div>
+</div> -->
 
 
 <script>
