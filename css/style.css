@@ -1,11 +1,11 @@
 #myBtnContainer {
-  margin-inline-start: auto;
+  margin-inline-start: 7vw;
 }
 
   .filterSelection {
   float: left;
-  background-color: #2196F3;
-  color: #ffffff;
+  background-color: #f3969a;
+  color: #884b60;
   width: 100px;
   line-height: 100px;
   text-align: center;
@@ -22,20 +22,21 @@
   overflow: hidden;
 }
 
-/* Style the buttons */
 .btnFilter {
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
+  background-color: #884b60;
+  color: #f3969a;
   cursor: pointer;
 }
 
 .btnFilter:hover {
-  background-color: #ddd;
+  background-color: #884b60;
+  color: #f3969a;
 }
 
 .btnFilter.active {
-  background-color: #666;
-  color: white;
+  background-color: #f3969a;
+  color: #884b60;
 }
