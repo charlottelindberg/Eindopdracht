@@ -3,7 +3,7 @@
 if(!$session->is_signed_in()){
     redirect('login.php');
 }
-$photos = Photo::find_all();
+$foto = Photo::find_all();
 ?>
 
 <?php include("includes/sidebar.php"); ?>
@@ -13,17 +13,17 @@ $photos = Photo::find_all();
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <h2>PHOTOS</h2>
+            <h2>Vind een dier - Fotos</h2>
             <table class="table table-header">
                 <thead>
                 <tr>
                     <th>Photo</th>
-                    <th>Id</th>
-                    <th>Title</th>
-                    <th>Caption</th>
-                    <th>File</th>
+                    <th>FotoID</th>
+                    <th>Bestandsnaam</th>
+                    <th>Dierensoort</th>
+                    <!-- <th>File</th>
                     <th>Alternate text</th>
-                    <th>Size</th>
+                    <th>Size</th> -->
                     <th>Comments</th>
                     <th>Wijzig?</th>
                     <th>Delete?</th>
@@ -31,26 +31,24 @@ $photos = Photo::find_all();
                 </tr>
                 </thead>
                 <tbody>
-                <?php foreach ($photos as $photo): ?>
+                <?php foreach ($foto as $photo): ?>
                 <tr>
                     <td><img src="<?php echo $photo->picture_path(); ?>" height="62" width="62" alt=""></td>
-                    <td><?php echo $photo->id; ?></td>
-                    <td><?php echo $photo->title; ?></td>
-                    <td><?php echo $photo->caption; ?></td>
-                    <td><?php echo $photo->filename; ?></td>
-                    <td><?php echo $photo->alternate_text; ?></td>
-                    <td><?php echo $photo->size; ?></td>
-                    <td><a href="comments_photo.php?id=<?php echo $photo->id;?>">
+                    <td><?php echo $photo->FotoID; ?></td>
+                    <td><?php echo $photo->Bestandsnaam; ?></td>
+                    <td><?php echo $photo->Dier_ID; ?></td>
+                    
+                    <td><a href="comments_photo.php?id=<?php echo $photo->FotoID;?>">
                             <?php
-                            $comments = Comment::find_the_comment($photo->id);
+                            $comments = Comment::find_the_comment($photo->FotoID);
                             echo count($comments);
                             ?>
                         </a></td>
-                    <td><a href="edit_photo.php?id=<?php echo $photo->id; ?>"
+                    <td><a href="edit_photo.php?id=<?php echo $photo->FotoID; ?>"
                            class="btn btn-danger rounded-0"><i class="fas fa-edit"></i></a></td>
-                    <td><a href="delete_photo.php?id=<?php echo $photo->id; ?>"
+                    <td><a href="delete_photo.php?id=<?php echo $photo->FotoID; ?>"
                            class="btn btn-danger rounded-0"><i class="fas fa-trash-alt"></i></a></td>
-                    <td><a href="../photo.php?id=<?php echo $photo->id; ?>"
+                    <td><a href="../photo.php?id=<?php echo $photo->FotoID; ?>"
                            class="btn btn-danger rounded-0"><i class="fas fa-eye"></i></a></td>
                 </tr>
                 <?php endforeach; ?>
