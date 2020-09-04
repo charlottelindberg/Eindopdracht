@@ -31,7 +31,6 @@
   overflow: hidden;
 }
 
-/* Style the buttons */
 .btnFilter {
   border: none;
   outline: none;
