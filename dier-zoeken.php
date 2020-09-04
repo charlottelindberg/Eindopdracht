@@ -14,35 +14,69 @@ include("includes/top-filter.php")
     <div class="row">
         <div class="col-lg col-12">
             <div class="row">
-                <div class="col-sm-4 col-12">
+                <div class="col-sm-3 col-12">
                     <div class="card text-center">
-                        <img class="card-img-top" src="http://placeimg.com/200/200/animals" alt="Card image cap">
+                        <img class="card-img-top" src="http://placeimg.com/400/400/animals" alt="Card image cap">
+                        <!-- <div class="card-header">
+                            Naam van het dier
+                        </div> -->
                         <div class="card-body">
                             <h5 class="card-title">Card title - PHP</h5>
-                            <p class="card-text">Some quick example text - PHP</p>
-                            <a href="#" class="btn btn-secondary">Adopteer mij!</a>
+                            <p class="card-text">Some quick example text</p>
+                            <a href="#" class="btn btn-secondary stretched-link">Adopteer mij!</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Info over het dierenasiel
                         </div>
                     </div>
                 </div>
                 <br>
-                <div class="col-sm-4 col-12">
+                <div class="col-sm-3 col-12">
                     <div class="card text-center">
-                        <img class="card-img-top" src="http://placeimg.com/200/200/animals" alt="Card image cap">
+                        <img class="card-img-top" src="http://placeimg.com/400/400/animals" alt="Card image cap">
+                        <!-- <div class="card-header">
+                            Naam van het dier
+                        </div> -->
                         <div class="card-body">
                             <h5 class="card-title">Card title - PHP</h5>
-                            <p class="card-text">Some quick example text - PHP</p>
-                            <a href="#" class="btn btn-secondary">Adopteer mij!</a>
+                            <p class="card-text">Some quick example text</p>
+                            <a href="#" class="btn btn-secondary stretched-link">Adopteer mij!</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Info over het dierenasiel
                         </div>
                     </div>
                 </div>
                 <br>
-                <div class="col-sm-4 col-12">
+                <div class="col-sm-3 col-12">
                     <div class="card text-center">
-                        <img class="card-img-top" src="http://placeimg.com/200/200/animals" alt="Card image cap">
+                        <img class="card-img-top" src="http://placeimg.com/400/400/animals" alt="Card image cap">
+                        <!-- <div class="card-header">
+                            Naam van het dier
+                        </div> -->
                         <div class="card-body">
                             <h5 class="card-title">Card title - PHP</h5>
-                            <p class="card-text">Some quick example text - PHP</p>
-                            <a href="#" class="btn btn-secondary">Adopteer mij!</a>
+                            <p class="card-text">Some quick example text</p>
+                            <a href="#" class="btn btn-secondary stretched-link">Adopteer mij!</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Info over het dierenasiel
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-12">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="http://placeimg.com/400/400/animals" alt="Card image cap">
+                        <!-- <div class="card-header">
+                            Naam van het dier
+                        </div> -->
+                        <div class="card-body">
+                            <h5 class="card-title">Card title - PHP</h5>
+                            <p class="card-text">Some quick example text</p>
+                            <a href="#" class="btn btn-secondary stretched-link">Adopteer mij!</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Info over het dierenasiel
                         </div>
                     </div>
                 </div>
@@ -102,39 +136,7 @@ include("includes/top-filter.php")
 
         <hr>
 
-        <!-- begin Selector Finder Tool  -->
-        <!-- <div class="col-lg-4 col-12">
-            <div class="row mx-0">
-                <div class="col-12 card bg-light mx-auto">
-                    <h3 class="text-center card-header">Vind <strong>jouw</strong> dier!</h3>
-                    <form class="card-body">
-                        <div class="form-group row">
-                            <label for="location1" class="col-form-label">Kies jouw regio</label>
-                            <select class="form-control" name="location" id="location1">
-                                <option value="">Alle provincies</option>
-                                <option value="">West-Vlaanderen</option>
-                                <option value="">Oost-Vlaanderen</option>
-                                <option value="">Vlaams Brabant</option>
-                            </select>
-                        </div>
-                        <div class="form-group row">
-                            <label for="location2" class="col-form-label">Kies jouw diersoort</label>
-                            <select class="form-control" name="location" id="location2">
-                                <option value="">Alle diersoorten</option>
-                                <option value="">Honden</option>
-                                <option value="">Katten</option>
-                                <option value="">Konijnen</option>
-                                <option value="">Paarden</option>
-                                <option value="">Vogels</option>
-                                <option value="">Knaagdieren</option>
-                                <option value="">Reptielen</option>
-                                <option value="">Andere diersoorten</option>
-                            </select>
-                        </div>
-                        <p class="text-center"><a href="#" class="btn btn-danger" role="button">Search </a></p>
-                    </form>
-                </div> -->
-        <!-- end Selector Finder Tool  -->
+
 
     </div>
 </div>
