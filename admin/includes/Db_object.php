@@ -63,10 +63,10 @@ class Db_object
     public function create(){
         global $database;
         $properties = $this->clean_properties();
-        var_dump($properties);
+        // var_dump($properties);
         $sql = "INSERT INTO " . static::$db_table . " (" . implode(",", array_keys($properties)) .")";
         $sql .= " VALUES ('". implode("','", array_values($properties)) . "')";
-        var_dump($sql);
+        // var_dump($sql);
         if($database->query($sql)){
             $this->id = $database->the_insert_id();
             return true;
