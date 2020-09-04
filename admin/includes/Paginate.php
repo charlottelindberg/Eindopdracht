@@ -18,7 +18,7 @@ class Paginate
         return $this->current_page + 1;
     }
 
-    public function  previous(){
+    public function previous(){
         return $this->current_page -1;
     }
 
