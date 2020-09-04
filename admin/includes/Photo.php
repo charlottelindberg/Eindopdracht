@@ -3,18 +3,12 @@
 
 class Photo extends Db_object
 {
-    protected static $db_table = "photo";
-    protected static $db_table_fields = array('title','caption', 'description', 'filename',
-        'alternate_text' ,'type', 'size');
-    public $id;
-    public $title;
-    public $caption;
-    public $description;
-    public $filename;
-    public $alternate_text;
+    protected static $db_table = "foto";
+    protected static $db_table_fields = array('FotoID','Bestandsnaam', 'Dier_ID');
+    public $FotoID;
+    public $Bestandsnaam;
+    public $Dier_ID;
     public $upload_directory = 'img';
-    public $type;
-    public $size;
 
     public $tmp_path;
 
@@ -26,10 +20,10 @@ class Photo extends Db_object
             $this->errors[] = $this->upload_errors_array[$file['error']];
             return false;
         }else{
-            $this->filename = basename($file['name']);
+            $this->Bestandsnaam = basename($file['Bestandsnaam']);
             $this->tmp_path = $file['tmp_path'];
-            $this->type = $file['type'];
-            $this->size = $file['size'];
+            // $this->type = $file['type'];
+            // $this->size = $file['size'];
         }
     }
 
@@ -40,14 +34,14 @@ class Photo extends Db_object
             if(!empty($this->errors)){
                 return false;
             }
-            if(empty($this->filename) || empty($this->temp_path)){
+            if(empty($this->Bestandsnaam) || empty($this->temp_path)){
                 $this->errors[] = "File not available";
                 return false;
             }
-            $target_path = SITE_ROOT . DS . 'admin' . DS . $this->upload_directory . DS . $this->filename;
+            $target_path = SITE_ROOT . DS . 'admin' . DS . $this->upload_directory . DS . $this->Bestandsnaam;
 
             if(file_exists($target_path)){
-                $this->errors[] = "File {$this->filename} exists";
+                $this->errors[] = "File {$this->Bestandsnaam} exists";
                 return false;
             }
             if(move_uploaded_file($this->tmp_path, $target_path)){
@@ -63,7 +57,7 @@ class Photo extends Db_object
     }
 
     public function picture_path(){
-        return $this->upload_directory.DS.$this->filename;
+        return $this->upload_directory.DS.$this->Bestandsnaam;
     }
 
     public function delete_photo(){
