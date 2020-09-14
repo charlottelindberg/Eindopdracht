@@ -20,13 +20,15 @@ class Db_object
         return static::find_this_query("SELECT * FROM " . static::$db_table);
     }
 
-    public static function find_by_id($id){
-        $result = static::find_this_query("SELECT * FROM " . static::$db_table . " WHERE id=$id LIMIT 1");
-        /*if(!empty($result)){
-            return array_shift($result);
-        }else{
-            return false;
-        }*/
+    public static function find_by_id($FotoID){
+        $result = static::find_this_query("SELECT * FROM " . static::$db_table . " WHERE id=$FotoID LIMIT 1");
+         
+        
+        // if(!empty($result)){
+        //     return array_shift($result);
+        // }else{
+        //     return false;
+        // }
         return !empty($result) ? array_shift($result) : false;
     }
 
@@ -88,7 +90,7 @@ class Db_object
 
         $sql = "UPDATE " . static::$db_table . " SET ";
         $sql .= implode(",", $properties_assoc);
-        $sql .= " WHERE id = " . $database->escape_string($this->id);
+        $sql .= " WHERE id = " . $database->escape_string($this->FotoID);
 
         $database->query($sql);
         return (mysqli_affected_rows($database->connection) == 1) ? true : false;
@@ -98,7 +100,7 @@ class Db_object
         global $database;
 
         $sql = "DELETE FROM " . static::$db_table;
-        $sql .= "WHERE id= " . $database->escape_string($this->id);
+        $sql .= "WHERE id= " . $database->escape_string($this->FotoID);
         $sql .= " LIMIT 1";
 
         $database->query($sql);
