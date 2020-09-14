@@ -13,7 +13,7 @@ if(!$session->is_signed_in()){
 $message = "";
 if(isset($_POST['submit'])){
     $photo = new Photo();
-    $photo->title = $_POST['title'];
+    $photo->Bestandsnaam = $_POST['Bestandsnaam'];
     $photo->set_file($_FILES['file']);
 
     if($photo->save()){
@@ -30,8 +30,8 @@ if(isset($_POST['submit'])){
             <h1 class="page-header">UPLOAD</h1>
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="title">title</label>
-                    <input type="text" name="title" class="form-control">
+                    <label for="Bestandsnaam">Bestandsnaam</label>
+                    <input type="text" name="Bestandsnaam" class="form-control">
                 </div>
                 <div class="form-group">
                     <input type="file" name="file" class="form-control">
