@@ -13,8 +13,7 @@ class User extends Db_object
     public $GebruikerFoto;
     public $upload_directory = 'img' . DS . 'users';
 
-    // public $type;
-    // public $size;
+    
 
     public $tmp_path;
 
@@ -50,8 +49,6 @@ class User extends Db_object
         }else{
             $this->GebruikerFoto = basename($file['name']);
             $this->tmp_path = $file['tmp_name'];
-            // $this->type = $file['type'];
-            // $this->size = $file['size'];
         }
     }
 
