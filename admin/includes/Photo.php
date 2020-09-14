@@ -20,15 +20,13 @@ class Photo extends Db_object
             $this->errors[] = $this->upload_errors_array[$file['error']];
             return false;
         }else{
-            $this->Bestandsnaam = basename($file['Bestandsnaam']);
+            $this->FotoID = basename($file['FotoID']);
             $this->tmp_path = $file['tmp_path'];
-            // $this->type = $file['type'];
-            // $this->size = $file['size'];
         }
     }
 
     public function save(){
-        if($this->id){
+        if($this->Bestandsnaam){
             $this->update();
         }else{
             if(!empty($this->errors)){
