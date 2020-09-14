@@ -7,6 +7,7 @@ require_once ("admin/includes/init.php");
 // }
 
 $foto = Photo::find_by_id($_GET['FotoID']);
+// var_dump('FotoID');
 
 if(isset($_POST['submit'])){
     $Gebruiker = trim($_POST['Gebruiker']);
