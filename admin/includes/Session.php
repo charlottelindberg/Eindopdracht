@@ -4,7 +4,7 @@
 class Session
 {
  private $signed_in = false;
- public $user_id;
+ public $GebruikerID;
  public $count;
 
  function __construct()
@@ -27,25 +27,25 @@ class Session
      return $this->signed_in;
  }
 
- public function login($user){
-     if($user){
-         $this->user_id = $_SESSION['user_id'] = $user->id;
+ public function login($gebruikers){
+     if($gebruikers){
+         $this->GebruikerID = $_SESSION['GebruikerID'] = $gebruikers->GebruikerID;
          $this->signed_in = true;
      }
  }
 
 public function logout(){
-     unset($_SESSION['user_id']);
-     unset($this->user_id);
+     unset($_SESSION['GebruikerID']);
+     unset($this->GebruikerID);
      $this->signed_in = false;
 }
 
  private function check_the_login(){
-     if(isset($_SESSION['user_id'])){
-         $this->user_id = $_SESSION['user_id'];
+     if(isset($_SESSION['GebruikerID'])){
+         $this->GebruikerID = $_SESSION['GebruikerID'];
          $this->signed_in = true;
      }else{
-         unset($this->user_id);
+         unset($this->GebruikerID);
          $this->signed_in = false;
      }
  }
