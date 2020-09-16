@@ -7,7 +7,7 @@ $foto = Photo::find_all();
 if(empty($_GET['id'])){
     redirect('photos.php');
 }else{
-    $photo = Photo::find_by_id($_GET['id']);
+    $photo = Photo::find_by_id($_GET['id'], 'FotoID');
     if(isset($_POST['update'])){
         if($photo){
             $photo->FotoID = $_POST['FotoID'];
