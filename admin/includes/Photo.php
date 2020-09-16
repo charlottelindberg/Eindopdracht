@@ -8,7 +8,7 @@ class Photo extends Db_object
     public $FotoID;
     public $Bestandsnaam;
     public $Dier_ID;
-    public $upload_directory = 'img';
+    public $upload_directory = 'img' . DS . 'uploads';
 
     public $tmp_path;
 
