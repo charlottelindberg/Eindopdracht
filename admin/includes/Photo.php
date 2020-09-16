@@ -4,7 +4,7 @@
 class Photo extends Db_object
 {
     protected static $db_table = "foto";
-    protected static $db_table_fields = array('FotoID','Bestandsnaam', 'Dier_ID');
+    protected static $db_table_fields = array('Bestandsnaam', 'Dier_ID');
     public $FotoID;
     public $Bestandsnaam;
     public $Dier_ID;
@@ -20,8 +20,8 @@ class Photo extends Db_object
             $this->errors[] = $this->upload_errors_array[$file['error']];
             return false;
         }else{
-            $this->FotoID = basename($file['FotoID']);
-            $this->tmp_path = $file['tmp_path'];
+            // $this->FotoID = basename($file['FotoID']);
+            $this->tmp_path = $file['tmp_name'];
         }
     }
 
