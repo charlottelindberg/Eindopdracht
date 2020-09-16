@@ -20,8 +20,13 @@ class Db_object
         return static::find_this_query("SELECT * FROM " . static::$db_table);
     }
 
-    public static function find_by_id($FotoID){
-        $result = static::find_this_query("SELECT * FROM " . static::$db_table . " WHERE id=$FotoID LIMIT 1");
+// $id met $objectid vervangen 
+    public static function find_by_id($ObjectID, $ObjectIdColumnName){
+        $result = static::find_this_query("SELECT * FROM " . static::$db_table . " WHERE " . $ObjectIdColumnName . "=$ObjectID LIMIT 1");
+
+
+    // public static function find_by_id($id){
+    //     $result = static::find_this_query("SELECT * FROM " . static::$db_table . " WHERE id=$id LIMIT 1");
          
         
         // if(!empty($result)){
