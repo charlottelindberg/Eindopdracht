@@ -6,7 +6,7 @@ if(!$session->is_signed_in()){
 if(empty($_GET['id'])){
     redirect('users.php');
 }
-$user = User::find_by_id($_GET['id']);
+$user = User::find_by_id($_GET['id'], 'GebruikerID');
 if($user){
     $user->delete();
     redirect('users.php');
