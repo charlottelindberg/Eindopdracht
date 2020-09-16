@@ -49,10 +49,10 @@ if(!$session->is_signed_in()){
                         <label for="Adres">Status</label>
                         <select name="Status" class="form-control">
                             <option selected>Kies een status</option>
-                            <option>Dierenasiel</option>
-                            <option>Opvangcentra</option>
-                            <option>Particuleer</option>
-                            <option>Dierenarts</option>
+                            <option value="1">Dierenasiel</option>
+                            <option value="2">Opvangcentra</option>
+                            <option value="3">Particuleer</option>
+                            <option value="4">Dierenarts</option>
                         </select>
                     </div>
                     <div class="form-group">
