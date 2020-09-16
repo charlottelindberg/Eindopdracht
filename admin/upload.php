@@ -14,7 +14,9 @@ $message = "";
 if(isset($_POST['submit'])){
     $photo = new Photo();
     $photo->Bestandsnaam = $_POST['Bestandsnaam'];
+    // var_dump($_FILES);
     $photo->set_file($_FILES['file']);
+// var_dump($_FILES);
 
     if($photo->save()){
         $message = "Photo uploaded successfully";
