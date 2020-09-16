@@ -14,6 +14,7 @@ $foto = Photo::find_all();
     <div class="row">
         <div class="col-12">
             <h2>Vind een dier - Fotos</h2>
+            <td><a href="add_photo.php" class="btn btn-primary rounded-0"><i class="fas fa-user-plus"></i> Foto Toevoegen</a></td>
             <table class="table table-header">
                 <thead>
                 <tr>
