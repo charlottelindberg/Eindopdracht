@@ -6,7 +6,7 @@ require_once ("admin/includes/init.php");
 //     redirect('index.php');
 // }
 
-$foto = Photo::find_by_id($_GET['FotoID']);
+$foto = Photo::find_by_id($_GET['id'], 'FotoID');
 // var_dump('FotoID');
 
 if(isset($_POST['submit'])){
