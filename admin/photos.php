@@ -22,9 +22,6 @@ $foto = Photo::find_all();
                     <th>FotoID</th>
                     <th>Bestandsnaam</th>
                     <th>Dierensoort</th>
-                    <!-- <th>File</th>
-                    <th>Alternate text</th>
-                    <th>Size</th> -->
                     <th>Comments</th>
                     <th>Wijzig?</th>
                     <th>Delete?</th>
