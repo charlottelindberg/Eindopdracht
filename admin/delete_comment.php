@@ -6,7 +6,7 @@ if(!$session->is_signed_in()){
 if(empty($_GET['id'])){
     redirect('comments.php');
 }
-$comment = Comment::find_by_id($_GET['id']);
+$comment = Comment::find_by_id($_GET['id'], 'CommentID');
 if($comment){
     $comment->delete();
     redirect('comments.php');
