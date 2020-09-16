@@ -23,17 +23,6 @@ class Db_object
 // $id met $objectid vervangen 
     public static function find_by_id($ObjectID, $ObjectIdColumnName){
         $result = static::find_this_query("SELECT * FROM " . static::$db_table . " WHERE " . $ObjectIdColumnName . "=$ObjectID LIMIT 1");
-
-
-    // public static function find_by_id($id){
-    //     $result = static::find_this_query("SELECT * FROM " . static::$db_table . " WHERE id=$id LIMIT 1");
-         
-        
-        // if(!empty($result)){
-        //     return array_shift($result);
-        // }else{
-        //     return false;
-        // }
         return !empty($result) ? array_shift($result) : false;
     }
 
@@ -48,7 +37,7 @@ class Db_object
     }
 
     public static function instantie($result){
-        $calling_class = get_called_class(); //late static binding
+        $calling_class = get_called_class(); 
         $the_object = new $calling_class;
         foreach ($result as $the_attribute => $value) {
             if($the_object->has_the_attribute($the_attribute)){
@@ -70,10 +59,8 @@ class Db_object
     public function create(){
         global $database;
         $properties = $this->clean_properties();
-        // var_dump($properties);
         $sql = "INSERT INTO " . static::$db_table . " (" . implode(",", array_keys($properties)) .")";
         $sql .= " VALUES ('". implode("','", array_values($properties)) . "')";
-        // var_dump($sql);
         if($database->query($sql)){
             $this->id = $database->the_insert_id();
             return true;
@@ -93,8 +80,10 @@ class Db_object
             $properties_assoc[] = "{$key}='{$value}'";
         }
 
-        $sql = "UPDATE " . static::$db_table . " SET ";
+        // probeer UPDATE met INSERT vervangen voor uploads
+        $sql = "INSERT " . static::$db_table . " SET ";
         $sql .= implode(",", $properties_assoc);
+        echo $sql;
         $sql .= " WHERE id = " . $database->escape_string($this->FotoID);
 
         $database->query($sql);
@@ -105,7 +94,7 @@ class Db_object
         global $database;
 
         $sql = "DELETE FROM " . static::$db_table;
-        $sql .= "WHERE id= " . $database->escape_string($this->FotoID);
+        $sql .= "WHERE id= " . $database->escape_string($this->id);
         $sql .= " LIMIT 1";
 
         $database->query($sql);
@@ -113,7 +102,6 @@ class Db_object
     }
 
     protected function properties(){
-        //return get_object_vars($this);
         $properties = array();
         foreach (static::$db_table_fields as $db_field){
             if(property_exists($this, $db_field)){
