@@ -40,13 +40,13 @@
 
 
     <!-- Nav Item - Charts -->
-    <li class="nav-item">
+    <!-- <li class="nav-item">
         <a class="nav-link" href="upload.php">
 
             <span>Upload</span>
             <i class="fas fa-upload"></i></a>
 
-    </li>
+    </li> -->
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
