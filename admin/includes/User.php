@@ -10,6 +10,7 @@ class User extends Db_object
     public $Password;
     public $Naam;
     public $Adres;
+    public $Status;
     public $GebruikerFoto;
     public $upload_directory = 'img' . DS . 'users';
 
