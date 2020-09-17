@@ -27,7 +27,7 @@ class Photo extends Db_object
 
     public function save(){
         if($this->Bestandsnaam){
-            $this->update();
+            $this->create(); # update() vervangen door create()
         }else{
             if(!empty($this->errors)){
                 return false;
