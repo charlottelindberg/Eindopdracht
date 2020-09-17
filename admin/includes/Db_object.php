@@ -81,10 +81,11 @@ class Db_object
         }
 
         // probeer UPDATE met INSERT vervangen voor uploads
-        $sql = "INSERT " . static::$db_table . " SET ";
+        $sql = "UPDATE " . static::$db_table . " SET ";
         $sql .= implode(",", $properties_assoc);
-        echo $sql;
-        $sql .= " WHERE id = " . $database->escape_string($this->FotoID);
+        // echo $sql;
+        $sql .= " WHERE " . static::$db_table_field_id . " = " . $database->escape_string($this->$db_table_field_id); # $this->FotoID vervangen
+        // $sql .= " WHERE id = " . $database->escape_string($this->FotoID);
 
         $database->query($sql);
         return (mysqli_affected_rows($database->connection) == 1) ? true : false;
@@ -94,7 +95,7 @@ class Db_object
         global $database;
 
         $sql = "DELETE FROM " . static::$db_table;
-        $sql .= "WHERE id= " . $database->escape_string($this->id);
+        $sql .= "WHERE id = " . $database->escape_string($this->$db_table_field_id);
         $sql .= " LIMIT 1";
 
         $database->query($sql);
