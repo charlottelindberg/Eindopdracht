@@ -26,7 +26,7 @@ if(empty($_GET['id'])){
     <div class="row">
         <div class="col-12">
             <h2>Welkom op de edit photo pagina</h2>
-            <form action="edit_photo.php?id=<?php echo $photo->id; ?>" method="post">
+            <form action="edit_photo.php?id=<?php echo $photo->FotoID; ?>" method="post">
                 <div class="col-md-8">
                     <div class="form-group">
                         <a href="#" class="thumbnail"><img src="<?php echo $photo->picture_path(); ?>" height="400" width="auto" alt=""></a>
@@ -36,6 +36,8 @@ if(empty($_GET['id'])){
                         <input type="text" name="Bestandsnaam" class="form-control" value="<?php echo $photo->Bestandsnaam; ?>">
                     </div>
                     <div class="form-group">
+
+                    <!-- dit moet naar dieren leiden in sql, en niet naar fotos  -->
                         <label for="Dier_ID">Omschrijving</label>
                         <textarea class="form-control" name="Dier_ID" id="" cols="30" rows="10"><?php echo $photo->Dier_ID; ?></textarea>
                     </div>
