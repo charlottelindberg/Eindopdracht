@@ -35,13 +35,13 @@
         <img src="./images/logo.png" width="155" height="50" alt="logo" loading="lazy">
         </a>
                <ul class="navbar-nav mr-auto">
-                <li class="navbar-text text-black-50 text-center">
-                <!-- Vind <strong>jouw</strong> dier! -->
+                <li class="navbar-text text-center">
+               <h1>Vind <strong>jouw</strong> dier!</h1> 
                 </li>
             </ul>
        
             <span class="navbar-text">
-                <a class="nav-link text-black-50" href="login.php">Aanmelden</a>
+                <a class="nav-link text-black-50" href="../../Eindopdracht/admin/login.php">Aanmelden</a>
             </span>
         </div>
     </nav>
