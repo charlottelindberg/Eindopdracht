@@ -10,7 +10,7 @@ if(!$session->is_signed_in()){
             $foto->Bestandsnaam = $_POST['Bestandsnaam'];
             $foto->Dier_ID = $_POST['Dier_ID'];
             $foto->set_file($_FILES['file']);
-            $foto->save();
+            $foto->create();
 
 
         }
