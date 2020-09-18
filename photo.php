@@ -33,18 +33,18 @@ $comments = Comment::find_the_comment($foto->FotoID);
 
             <!-- Title -->
             <h1 class="mt-4"><?php echo $foto->title; ?></h1>
-            <!-- Gebruiker -->
+            
             <p class="lead">
-                by Vind een Dier
+                door de Vind een Dier crew
             </p>
             <hr>
-            <!-- Date/Time -->
-            <!-- <p>
+            
             <?php echo "Gepubliceerd op " .date("l"). " ". date("Y-m-d") . "<br>"; ?>
             </p>
-            <hr> -->
-            <!-- Preview Image -->
-            <img class="img-fluid rounded" src="<?php echo 'admin'.DS.$foto->picture_path(); ?>" width="300" height="300" alt="">
+            <hr> 
+
+            
+            <img class="img-fluid rounded" src="<?php echo 'admin'.DS.$foto->picture_path(); ?>" alt="">
             <hr>
             <!-- Post Content -->
             <p>
