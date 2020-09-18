@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 14, 2020 at 06:37 PM
+-- Generation Time: Sep 18, 2020 at 08:00 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -45,6 +45,17 @@ CREATE TABLE `comments` (
   `Gebruiker` varchar(25) NOT NULL,
   `Bericht` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`CommentID`, `FotoID`, `Gebruiker`, `Bericht`) VALUES
+(1, 1, 'Hannah', 'Hallo'),
+(2, 1, 'Sonia', 'Wat een mooie jongetje!'),
+(3, 3, 'Vicky', 'Ik meld hierbij mijn intresse aan! \r\nContacteer mij op vicky@mail.be of 0490 - 00 00 00'),
+(4, 4, 'Teddy', 'Is het een rasechte kip?'),
+(5, 4, 'Monica', 'Hoe is haar eieren productie?');
 
 -- --------------------------------------------------------
 
@@ -108,7 +119,31 @@ CREATE TABLE `foto` (
 --
 
 INSERT INTO `foto` (`FotoID`, `Bestandsnaam`, `Dier_ID`) VALUES
-(1, '01.jpg', 1);
+(1, 'hond01.jpg', 1),
+(3, 'konijn01.jpg', 3),
+(4, 'vogel01.jpg', 4),
+(5, 'kat01.jpg', 2),
+(6, 'kat02.jpg', 2),
+(7, 'kat03.jpg', 2),
+(8, 'hond02.jpg', 1),
+(9, 'hond03.jpg', 1),
+(10, 'rat01.jpg', 4),
+(11, 'hamster01.jpg', 4),
+(12, 'konijn02.jpg', 3),
+(13, 'konijn03.jpg', 3),
+(14, 'paard01.jpg', 4),
+(15, 'paard02.jpg', 4),
+(16, 'paard03.jpg', 4),
+(17, 'vogel02.jpg', 4),
+(18, 'vogel03.jpg', 4),
+(19, 'slang01.jpg', 4),
+(20, 'slang02.jpg', 4),
+(21, 'schildpad01.jpg', 4),
+(22, 'schildpad02.jpg', 4),
+(23, 'varken01.jpg', 4),
+(24, 'schaap01.jpg', 4),
+(25, 'geit01.jpg', 4),
+(26, 'alpaca01.jpg', 4);
 
 -- --------------------------------------------------------
 
@@ -131,7 +166,11 @@ CREATE TABLE `gebruikers` (
 --
 
 INSERT INTO `gebruikers` (`GebruikerID`, `Username`, `Password`, `Naam`, `Adres`, `Status`, `GebruikerFoto`) VALUES
-(1, 'admin', 'admin', 'Charlotte Lindberg', 'Pleinstraat 77, 3001 Heverlee', 1, 'dimi.png');
+(1, 'admin', 'admin', 'Charlotte Lindberg', 'Pleinstraat 77, 3001 Heverlee', 1, 'dimi.png'),
+(2, 'knaagtandje', 'pwd', 'Het Knaagtandje', 'Bosstraat 7, 2342, Stekene', 1, '003-Steamboat Willie.jpg'),
+(3, 'margodierenarts', 'pwd', 'Margo La Croix', 'De Vaartkom, 3000, Leuven', 4, 'concain3.JPG'),
+(4, 'rockwilder', 'pwd', 'Kim Debecker', 'Eenmeilaan 7, 3010, Kessel-Lo', 3, '98108.jpg'),
+(5, 'pootjesenpelsje', 'pwd', 'Pootjes en Pelsjes', 'Bosstraat 7, 2342, Stekene', 2, '611627.jpg');
 
 --
 -- Indexes for dumped tables
@@ -187,7 +226,7 @@ ALTER TABLE `asielen`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `CommentID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `CommentID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `dieren`
@@ -205,13 +244,13 @@ ALTER TABLE `diersoort`
 -- AUTO_INCREMENT for table `foto`
 --
 ALTER TABLE `foto`
-  MODIFY `FotoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `FotoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `gebruikers`
 --
 ALTER TABLE `gebruikers`
-  MODIFY `GebruikerID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `GebruikerID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
