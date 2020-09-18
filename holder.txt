@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------
-CARD COLUMN = cards stable on top of eachother instead of masonry like
+CARD COLUMN = cards staple on top of eachother, masonry-style (werkt niet)
 ----------------------------------------------------------------------
 <?php foreach ($photos as $photo) : ?>
 
-    <!-- <div class="card-columns"> -->
+    <div class="card-columns">
         <div class="card">
             <a href="photo.php?id=<?php echo $photo->FotoID; ?>">
                 <img class="card-img-top" src="<?php echo 'admin' . DS . $photo->picture_path(); ?>" alt="" class="img-fluid">
@@ -19,7 +19,7 @@ CARD COLUMN = cards stable on top of eachother instead of masonry like
 
 
 ---------------------------------------------------------------------
-OG code that shows card layout, but not masonry style
+Basic card layout, but not masonry style
 ---------------------------------------------------------------------
 
 <div class="container">
