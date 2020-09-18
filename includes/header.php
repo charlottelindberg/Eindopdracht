@@ -1,3 +1,9 @@
+<?php
+
+require_once ("admin/includes/init.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +42,7 @@
         </a>
                <ul class="navbar-nav mr-auto">
                 <li class="navbar-text text-center">
-               <h1>Vind <strong>jouw</strong> dier!</h1> 
+               <!-- <h1>Vind <strong>jouw</strong> dier!</h1>  -->
                 </li>
             </ul>
        

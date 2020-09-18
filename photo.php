@@ -1,13 +1,9 @@
 <?php
 include ("includes/header.php");
-require_once ("admin/includes/init.php");
+// require_once ("admin/includes/init.php");
 
-// if(empty($_GET['id'])){
-//     redirect('index.php');
-// }
 
 $foto = Photo::find_by_id($_GET['id'], 'FotoID');
-// var_dump('FotoID');
 
 if(isset($_POST['submit'])){
     $Gebruiker = trim($_POST['Gebruiker']);
@@ -33,19 +29,20 @@ $comments = Comment::find_the_comment($foto->FotoID);
     <div class="row">
 
         <!-- Post Content Column -->
-        <div class="col-lg-8">
+        <div class="col-lg-12">
 
             <!-- Title -->
             <h1 class="mt-4"><?php echo $foto->title; ?></h1>
             <!-- Gebruiker -->
             <p class="lead">
-                by
-                <a href="#">Start Bootstrap</a>
+                by Vind een Dier
             </p>
             <hr>
             <!-- Date/Time -->
-            <p>Posted on January 1, 2019 at 12:00 PM</p>
-            <hr>
+            <!-- <p>
+            <?php echo "Gepubliceerd op " .date("l"). " ". date("Y-m-d") . "<br>"; ?>
+            </p>
+            <hr> -->
             <!-- Preview Image -->
             <img class="img-fluid rounded" src="<?php echo 'admin'.DS.$foto->picture_path(); ?>" width="300" height="300" alt="">
             <hr>
@@ -57,17 +54,19 @@ $comments = Comment::find_the_comment($foto->FotoID);
 
             <!-- Comments Form -->
             <div class="card my-4">
-                <h5 class="card-header">Leave a Comment:</h5>
+                <h5 class="card-header">Laat een bericht achter:</h5>
                 <div class="card-Bericht">
                     <form method="post">
                         <div class="form-group">
-                            <label for="Gebruiker">Gebruiker</label>
+                        <br>
+                            <label for="Gebruiker"> Gebruikernaam:</label>
                             <input type="text" name="Gebruiker" class="form-control">
                         </div>
                         <div class="form-group">
+                        <label for="Bericht"> Bericht:</label>
                             <textarea class="form-control" name="Bericht" rows="3"></textarea>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" name="submit" class="btn btn-secondary">Submit</button>
                     </form>
                 </div>
             </div>
@@ -75,7 +74,8 @@ $comments = Comment::find_the_comment($foto->FotoID);
             <?php foreach ($comments as $comment): ?>
             <!-- Single Comment -->
             <div class="media mb-4">
-                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+                <img class="d-flex mr-3 rounded-circle" src="http://placeimg.com/50/50/people" alt="">
+                
                 <div class="media-Bericht">
                     <h5 class="mt-0"><?php echo $comment->Gebruiker; ?> on photo <?php echo $comment->FotoID; ?></h5>
                     <p><?php echo $comment->Bericht; ?></p>
@@ -85,67 +85,7 @@ $comments = Comment::find_the_comment($foto->FotoID);
 
         </div>
 
-        <!-- Sidebar Widgets Column -->
-        <div class="col-md-4">
-
-            <!-- Search Widget -->
-            <div class="card my-4">
-                <h5 class="card-header">Search</h5>
-                <div class="card-Bericht">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
-              </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Categories Widget -->
-            <div class="card my-4">
-                <h5 class="card-header">Categories</h5>
-                <div class="card-Bericht">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">Web Design</a>
-                                </li>
-                                <li>
-                                    <a href="#">HTML</a>
-                                </li>
-                                <li>
-                                    <a href="#">Freebies</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">JavaScript</a>
-                                </li>
-                                <li>
-                                    <a href="#">CSS</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tutorials</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Side Widget -->
-            <div class="card my-4">
-                <h5 class="card-header">Side Widget</h5>
-                <div class="card-Bericht">
-                    You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-                </div>
-            </div>
-
-        </div>
-
+       
     </div>
     <!-- /.row -->
 

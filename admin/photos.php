@@ -13,8 +13,8 @@ $foto = Photo::find_all();
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <h2>Vind een dier - Fotos</h2>
-            <td><a href="add_photo.php" class="btn btn-primary rounded-0"><i class="fas fa-user-plus"></i> Foto Toevoegen</a></td>
+            <h2>Dieren - Overzicht</h2>
+            <td><a href="add_photo.php" class="btn btn-primary rounded-0"><i class="fas fa-user-plus"></i> Nieuwe Dier Toevoegen</a></td>
             <table class="table table-header">
                 <thead>
                 <tr>
@@ -34,6 +34,9 @@ $foto = Photo::find_all();
                     <td><img src="<?php echo $photo->picture_path(); ?>" height="62" width="62" alt=""></td>
                     <td><?php echo $photo->FotoID; ?></td>
                     <td><?php echo $photo->Bestandsnaam; ?></td>
+
+                    <!-- integer value naar diersoort omzetten 
+                    of is deze colom zels nodig?  -->
                     <td><?php echo $photo->Dier_ID; ?></td>
                     
                     <td><a href="comments_photo.php?id=<?php echo $photo->FotoID;?>">
@@ -42,6 +45,8 @@ $foto = Photo::find_all();
                             echo count($comments);
                             ?>
                         </a></td>
+
+                        <!-- buttons  -->
                     <td><a href="edit_photo.php?id=<?php echo $photo->FotoID; ?>"
                            class="btn btn-danger rounded-0"><i class="fas fa-edit"></i></a></td>
                     <td><a href="delete_photo.php?id=<?php echo $photo->FotoID; ?>"

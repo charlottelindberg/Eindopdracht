@@ -13,7 +13,7 @@ $gebruikers = User::find_all();
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <h2>Gebruiker toevoegen</h2>
+            <h2>Gebruikers - Overzicht</h2>
             <td><a href="add_user.php" class="btn btn-primary rounded-0"><i class="fas fa-user-plus"></i> Gebruiker Toevoegen</a></td>
             <table class="table table-header">
                 <thead>

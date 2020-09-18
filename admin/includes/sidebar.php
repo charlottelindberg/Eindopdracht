@@ -23,41 +23,22 @@
     <hr class="sidebar-divider">
 
 
-    <!-- Nav Item - Pages Collapse Menu -->
     <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link" href="users.php">
 
-            <span>Users</span>
-            <i class="fas fa-user"></i>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="users.php">Alle gebruikers</a>
-                <a class="collapse-item" href="add_user.php">Gebruiker toevoegen</a>
-            </div>
-        </div>
+            <span>Gebruikers</span>
+            <i class="fas fa-user"></i></a>
+
     </li>
 
-
-    <!-- Nav Item - Charts -->
-    <!-- <li class="nav-item">
-        <a class="nav-link" href="upload.php">
-
-            <span>Upload</span>
-            <i class="fas fa-upload"></i></a>
-
-    </li> -->
-
-    <!-- Nav Item - Charts -->
     <li class="nav-item">
         <a class="nav-link" href="photos.php">
 
-            <span>Fotos</span>
-            <i class="fas fa-camera"></i></a>
+            <span>Dieren</span>
+            <i class="fas fa-cat"></i></a>
 
     </li>
 
-    <!-- Nav Item - Charts -->
     <li class="nav-item">
         <a class="nav-link" href="comments.php">
 
@@ -66,7 +47,13 @@
 
     </li>
 
+<!-- <li class="nav-item">
+        <a class="nav-link" href="upload.php">
 
+            <span>Upload</span>
+            <i class="fas fa-upload"></i></a>
+
+    </li> -->
 
 </ul>
 <!-- End of Sidebar -->

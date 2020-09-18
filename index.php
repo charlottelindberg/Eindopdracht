@@ -10,7 +10,11 @@ include("includes/header.php");
     <div class="row mx-0">
         <div class="col-12 card bg-light mx-auto">
             <h1 class="text-center pt-3">Vind <strong>jouw</strong> dier!</h1>
+
+            <!-- insert php code ipv static nummer -->
             <p class="text-center">Momenteel zijn er <strong>709</strong> dieren beschikkbaar voor adoptie</p>
+
+
             <hr>
             <form class="card-body text-center">
                 <div class="form-group row">
@@ -55,54 +59,45 @@ include("includes/header.php");
                     <hr>
                     <div class="row">
                         <div class="col-4">
-                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
-                                    alt="Thumbnail Image 1">
+                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals" alt="Thumbnail Image 1">
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
-                                    alt="Thumbnail Image 1">
+                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals" alt="Thumbnail Image 1">
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
-                                    alt="Thumbnail Image 1">
+                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals" alt="Thumbnail Image 1">
                             </div>
                         </div>
                     </div>
                     <hr>
                     <div class="row">
                         <div class="col-4">
-                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
-                                    alt="Thumbnail Image 1">
+                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals" alt="Thumbnail Image 1">
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
-                                    alt="Thumbnail Image 1">
+                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals" alt="Thumbnail Image 1">
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
-                                    alt="Thumbnail Image 1">
+                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals" alt="Thumbnail Image 1">
                             </div>
                         </div>
                     </div>
                     <hr>
                     <div class="row">
                         <div class="col-4">
-                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
-                                    alt="Thumbnail Image 1">
+                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals" alt="Thumbnail Image 1">
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
-                                    alt="Thumbnail Image 1">
+                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals" alt="Thumbnail Image 1">
                             </div>
                         </div>
                         <div class="col-4">
-                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals"
-                                    alt="Thumbnail Image 1">
+                            <div class="text-center"> <img src="http://placeimg.com/100/100/animals" alt="Thumbnail Image 1">
                             </div>
                         </div>
                     </div>
@@ -117,29 +112,30 @@ include("includes/header.php");
                     </h3>
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
-                                role="tab" aria-controls="nav-home" aria-selected="true">Honden</a>
-                            <a class="nav-item nav-link" id="nav-katten-tab" data-toggle="tab" href="#nav-katten"
-                                role="tab" aria-controls="nav-katten" aria-selected="false">Katten</a>
-                            <a class="nav-item nav-link" id="nav-konijnen-tab" data-toggle="tab" href="#nav-konijnen"
-                                role="tab" aria-controls="nav-konijnen" aria-selected="false">Konijnen</a>
-                            <a class="nav-item nav-link" id="nav-kippen-tab" data-toggle="tab" href="#nav-kippen"
-                                role="tab" aria-controls="nav-kippen" aria-selected="false">Kippen</a>
-                            <a class="nav-item nav-link" id="nav-paarden-tab" data-toggle="tab" href="#nav-paarden"
-                                role="tab" aria-controls="nav-paarden" aria-selected="false">Paarden</a>
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Honden</a>
+                            <a class="nav-item nav-link" id="nav-katten-tab" data-toggle="tab" href="#nav-katten" role="tab" aria-controls="nav-katten" aria-selected="false">Katten</a>
+                            <a class="nav-item nav-link" id="nav-konijnen-tab" data-toggle="tab" href="#nav-konijnen" role="tab" aria-controls="nav-konijnen" aria-selected="false">Konijnen</a>
+                            <a class="nav-item nav-link" id="nav-kippen-tab" data-toggle="tab" href="#nav-kippen" role="tab" aria-controls="nav-kippen" aria-selected="false">Kippen</a>
+                            <a class="nav-item nav-link" id="nav-paarden-tab" data-toggle="tab" href="#nav-paarden" role="tab" aria-controls="nav-paarden" aria-selected="false">Paarden</a>
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                            aria-labelledby="nav-home-tab">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                             <p>
-                            De hond moet voldoende ruimte hebben om te lopen, te spelen en om zijn behoefte te doen. De huisvesting moet veilig zijn en de hond beschermen tegen koude en hitte. Een droge en comfortabele slaapplaats is verplicht. 
+                                De hond moet voldoende ruimte hebben om te lopen, te spelen en om zijn behoefte te doen.
+                                De huisvesting moet veilig zijn en de hond beschermen tegen koude en hitte. Een droge en
+                                comfortabele slaapplaats is verplicht.
                             </p>
                             <p>
-                            Een hond is een sociaal dier. Als je één hond hebt, zorg dan voor bekende en bevriende honden als vaste speel- en wandelpartners. Als je een hond een lange tijd alleen laat, dan kan hij ten prooi vallen aan stress en verveling.
+                                Een hond is een sociaal dier. Als je één hond hebt, zorg dan voor bekende en bevriende
+                                honden als vaste speel- en wandelpartners. Als je een hond een lange tijd alleen laat,
+                                dan kan hij ten prooi vallen aan stress en verveling.
                             </p>
                             <p>
-                            Honden hebben als ontspanning afwisselende activiteiten nodig. Ze moeten kunnen snuffelen, lopen, graven, zwemmen en onderzoeken. Laat de hond dagelijks uit aan een comfortabel tuig en een lange leiband. Laat de hond loslopen waar het mogelijk en toegelaten is, bijvoorbeeld op een hondenweide.
+                                Honden hebben als ontspanning afwisselende activiteiten nodig. Ze moeten kunnen
+                                snuffelen, lopen, graven, zwemmen en onderzoeken. Laat de hond dagelijks uit aan een
+                                comfortabel tuig en een lange leiband. Laat de hond loslopen waar het mogelijk en
+                                toegelaten is, bijvoorbeeld op een hondenweide.
                             </p>
 
                         </div>
@@ -149,16 +145,16 @@ include("includes/header.php");
                                 richten. Van alle benodigdheden heb je er één meer nodig dan het aantal katten in huis.
                                 Voor één kat zijn er dus twee kattenbakken nodig, voor twee katten drie kattenbakken
                                 enzovoort.
-                            <p>
-                                Zet alle kattenspullen verspreid in huis neer. Zet bijvoorbeeld niet alle kattenbakken
-                                bij elkaar in de berging. Zo voorkom je dat één kat de toegang naar de kattenbakken voor
-                                de andere katten kan blokkeren door voor de deur te gaan zitten.
-                            </p>
-                            Het voer en het drinken mogen niet in de buurt van de kattenbak staan. Dit kan er toe leiden
-                            dat de kat zijn behoefte op ongewenste plaatsen in huis doet. Zorg ook dat het voer en het
-                            drinken niet naast mekaar staan: laat er minstens 1,5 meter tussen. Katten houden er niet
-                            van om te drinken in de buurt van hun eten. Daardoor drinken ze soms te weinig, wat de kans
-                            op blaasproblemen verhoogt.
+                                <p>
+                                    Zet alle kattenspullen verspreid in huis neer. Zet bijvoorbeeld niet alle kattenbakken
+                                    bij elkaar in de berging. Zo voorkom je dat één kat de toegang naar de kattenbakken voor
+                                    de andere katten kan blokkeren door voor de deur te gaan zitten.
+                                </p>
+                                Het voer en het drinken mogen niet in de buurt van de kattenbak staan. Dit kan er toe leiden
+                                dat de kat zijn behoefte op ongewenste plaatsen in huis doet. Zorg ook dat het voer en het
+                                drinken niet naast mekaar staan: laat er minstens 1,5 meter tussen. Katten houden er niet
+                                van om te drinken in de buurt van hun eten. Daardoor drinken ze soms te weinig, wat de kans
+                                op blaasproblemen verhoogt.
                             </p>
                         </div>
                         <div class="tab-pane fade" id="nav-konijnen" role="tabpanel" aria-labelledby="nav-konijnen-tab">
@@ -167,12 +163,12 @@ include("includes/header.php");
                                     huisdieren voor kinderen</strong>. De meeste konijnen vinden oppakken en knuffelen
                                 niet leuk. Ze kunnen dan krabben en bijten en <em> zelfs hun eigen rug breken</em> als
                                 ze spartelen bij het optillen.
-                            <p>
-                                Door veel tijd aan het konijn te besteden en er rustig mee om te gaan, kan het wel tam
-                                worden en leren dat aaien prettig kan zijn. Konijnen kunnen ook allerlei trucjes leren
-                                en er wordt zelfs aan konijnen-agility gedaan. <em> Konijnen zijn dus vooral leuke
-                                    huisdieren voor mensen die er ofwel veel mee willen bezig zijn, ofwel er vooral
-                                    willen naar kijken.</em></p>
+                                <p>
+                                    Door veel tijd aan het konijn te besteden en er rustig mee om te gaan, kan het wel tam
+                                    worden en leren dat aaien prettig kan zijn. Konijnen kunnen ook allerlei trucjes leren
+                                    en er wordt zelfs aan konijnen-agility gedaan. <em> Konijnen zijn dus vooral leuke
+                                        huisdieren voor mensen die er ofwel veel mee willen bezig zijn, ofwel er vooral
+                                        willen naar kijken.</em></p>
                             </p>
                             <p>
                                 Konijnen hebben veel ruimte nodig. Combineer een hok of kooi met een grote (buiten)ren
@@ -229,8 +225,8 @@ include("includes/header.php");
             </div>
         </div>
     </section>
-    </div>
-    <!-- end dieren info - tabs  -->
+</div>
+<!-- end dieren info - tabs  -->
 
 
 <?php

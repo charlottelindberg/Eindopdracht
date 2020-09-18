@@ -2,7 +2,9 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
+            <span>Copyright © Cha-Lin 2k20 - All rights reserved.
+            <br>
+Eindwerk opleiding Web Developer - Obelisk / VDAB / Multimedi </span>
         </div>
     </div>
 </footer>
