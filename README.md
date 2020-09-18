@@ -45,7 +45,10 @@ Eerste week gemist door ziekte.
     <br>Een voorbeeld van W3C Schools genomen dat ik nu verder mee ga werken.
     
 <p><b>Vrijdag 04/09</b>:
-  <br>Verder met de finder functie gewerkt.
-  <br><img src=Screenshot-einde-van-de-dag-04-09.png width=”100"></img>
-    <p>Begonnen met de Admin / PHP stuk.
-<br><img src=Screenshot-einde-van-de-dag-04-09-2.png width=”100"></img>
+  <br>Verder met de finder functie gewerkt, en de Admin stuk.
+  
+  <p><b>Week van Maandag 14/9 - Vrijdag 18/9</b>:
+  <br>Veel gedaan (update komt morgen).
+  <br>Masonry card layout werkt niet :(
+  <br><img src=Screenshot_2020-09-18.jpg width=”100"></img>
+ 
