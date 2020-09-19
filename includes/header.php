@@ -41,8 +41,8 @@ require_once ("admin/includes/init.php");
         <img src="./images/logo.png" width="155" height="50" alt="logo" loading="lazy">
         </a>
                <ul class="navbar-nav mr-auto">
-                <li class="navbar-text text-center">
-               <!-- <h1>Vind <strong>jouw</strong> dier!</h1>  -->
+                <li class="navbar-text text-black-50">
+               Vind een dier!
                 </li>
             </ul>
        
