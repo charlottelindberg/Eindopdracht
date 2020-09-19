@@ -35,7 +35,7 @@ $comments = Comment::find_the_comment($foto->FotoID);
             <h1 class="mt-4"><?php echo $foto->title; ?></h1>
             
             <p class="lead">
-                door de Vind een Dier crew
+                door de <strong>Vind een Dier</strong> crew
             </p>
             <hr>
             
