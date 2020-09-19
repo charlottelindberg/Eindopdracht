@@ -50,5 +50,9 @@ Eerste week gemist door ziekte.
   <p><b>Week van Maandag 14/9 - Vrijdag 18/9</b>:
   <br>Veel gedaan (update komt morgen).
   <br>Masonry card layout werkt niet :(
-  <br><img src=Screenshot_2020-09-18.jpg width=”100"></img>
+  <br><img src=Screenshot_2020-09-18.jpg height=”200"></img>
+
+  <p><b>Zaterdag 19/09</b>:
+  <br>CARD SECTIE EINDELIJK OPGELOST!! :tada:
+  <br><img src=Screenshot_2020-09-19.jpg height=”200"></img>
  
