@@ -3,7 +3,7 @@ include("includes/header.php");
 include("includes/top-filter.php");
 
 $page = !empty($_GET['page']) ? (int)$_GET['page'] : 1;
-$items_per_page = 12;
+$items_per_page = 6;
 $items_total_count = Photo::count_all();
 
 $paginate = new Paginate($page, $items_per_page, $items_total_count);
@@ -17,21 +17,23 @@ $photos = Photo::find_this_query($sql);
 
 <p></p>
 
+<div class="card-columns">
 <?php foreach ($photos as $photo) : ?>
 
-    <div class="card-columns">
-        <div class="card">
-            <a href="photo.php?id=<?php echo $photo->FotoID; ?>">
-                <img class="card-img-top" src="<?php echo 'admin' . DS . $photo->picture_path(); ?>" alt="" class="img-fluid">
-            </a>
-            <div class="card-body">
-                <h5 class="card-title">Card title - PHP</h5>
-                <p class="card-text">Dier omschrijving - PHP</p>
-            </div>
+
+    <div class="card">
+        <a href="photo.php?id=<?php echo $photo->FotoID; ?>">
+            <img class="card-img-top" src="<?php echo 'admin' . DS . $photo->picture_path(); ?>" alt="" class="img-fluid">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title">Card title - PHP</h5>
+            <p class="card-text">Dier omschrijving - PHP</p>
         </div>
     </div>
 
+
 <?php endforeach; ?>
+</div>
 
 
 
