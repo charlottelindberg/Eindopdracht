@@ -1,3 +1,6 @@
+<!-- card layout support van bootstrap  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
 <?php
 include("includes/header.php");
 include("includes/top-filter.php");
