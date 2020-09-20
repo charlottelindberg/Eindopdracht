@@ -6,6 +6,8 @@
                     <p>
                         <br>
                         Copyright © Cha-Lin 2k20 - All rights reserved.
+                        <br>Alle fotos komen van <a href="http://www.pexels.com">Pexels.com</a>. 
+                        Teksten komen van <a href="http://www.huisdierinfo.be/">Huisdierinfo.be</a>.
                         <br>Eindwerk opleiding Web Developer - Obelisk / VDAB / Multimedi
                     </p>
                 </div>
