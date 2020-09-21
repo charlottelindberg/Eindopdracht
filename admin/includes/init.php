@@ -7,9 +7,10 @@ defined('IMAGES_PATH') ? null : define('IMAGES_PATH', SITE_ROOT.DS.'admin'.DS.'i
 require_once(INCLUDES_PATH.DS."functions.php");
 require_once(INCLUDES_PATH.DS."config.php");
 require_once(INCLUDES_PATH.DS."Database.php");
-require_once (INCLUDES_PATH.DS."Db_object.php");
+require_once(INCLUDES_PATH.DS."Db_object.php");
 require_once(INCLUDES_PATH.DS."User.php");
-require_once (INCLUDES_PATH.DS."Photo.php");
+require_once(INCLUDES_PATH.DS."Photo.php");
+require_once(INCLUDES_PATH.DS."Dieren.php");
 require_once(INCLUDES_PATH.DS."Session.php");
 require_once(INCLUDES_PATH.DS."Comment.php");
 require_once(INCLUDES_PATH.DS."Paginate.php");

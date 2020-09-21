@@ -32,7 +32,7 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="photos.php">
+        <a class="nav-link" href="dieren.php">
 
             <span>Dieren</span>
             <i class="fas fa-cat"></i></a>

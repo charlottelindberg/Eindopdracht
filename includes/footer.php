@@ -2,7 +2,7 @@
     <footer class="text-center bg-secondary">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-black-50">
+                <div class="col-12 text-black-50 small">
                     <p>
                         <br>
                         Copyright © Cha-Lin 2k20 - All rights reserved.

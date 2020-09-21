@@ -14,7 +14,7 @@ $foto = Photo::find_all();
     <div class="row">
         <div class="col-12">
             <h2>Dieren - Overzicht</h2>
-            <td><a href="add_photo.php" class="btn btn-primary rounded-0"><i class="fas fa-user-plus"></i> Nieuwe Dier Toevoegen</a></td>
+            <td><a href="add_dier.php" class="btn btn-primary rounded-0"><i class="fas fa-user-plus"></i> Nieuwe Dier Toevoegen</a></td>
             <table class="table table-header">
                 <thead>
                 <tr>
@@ -34,9 +34,6 @@ $foto = Photo::find_all();
                     <td><img src="<?php echo $photo->picture_path(); ?>" height="62" width="62" alt=""></td>
                     <td><?php echo $photo->FotoID; ?></td>
                     <td><?php echo $photo->Bestandsnaam; ?></td>
-
-                    <!-- integer value naar diersoort omzetten 
-                    of is deze colom zels nodig?  -->
                     <td><?php echo $photo->Dier_ID; ?></td>
                     
                     <td><a href="comments_photo.php?id=<?php echo $photo->FotoID;?>">

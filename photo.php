@@ -5,6 +5,7 @@ include("includes/header.php");
 
 $foto = Photo::find_by_id($_GET['id'], 'FotoID');
 
+
 if (isset($_POST['submit'])) {
     $Gebruiker = trim($_POST['Gebruiker']);
     $Bericht = trim($_POST['Bericht']);
@@ -22,6 +23,17 @@ if (isset($_POST['submit'])) {
 }
 
 $comments = Comment::find_the_comment($foto->FotoID);
+
+// $dier = Dieren::find_by_id($_GET['id'], 'DierenID');
+
+// $dier = Dieren::find_the_animal();
+
+$new_dier = new Dieren;
+$dier = $new_dier->find_the_animal($_GET['id'], 'DierenID');
+// var_dump($new_dier);
+// var_dump($dier);
+// echo $dier[0]->Naam;
+
 ?>
 <!-- Page Content -->
 <div class="container">
@@ -32,7 +44,8 @@ $comments = Comment::find_the_comment($foto->FotoID);
         <div class="col-lg-12">
 
             <!-- Title -->
-            <h1 class="mt-4"><?php echo $foto->title; ?></h1>
+            <h1 class="mt-4"><?php echo $dier[0]->Naam; ?></h1>
+            
 
             <p class="lead">
                 door de <strong>Vind een Dier</strong> crew
@@ -40,14 +53,31 @@ $comments = Comment::find_the_comment($foto->FotoID);
             <hr>
 
             <!-- Datuum includeren  -->
-            <!-- <?php echo "Gepubliceerd op " . date("l") . " " . date("Y-m-d") . "<br>"; ?> -->
-            <!-- <hr>  -->
+            Gepubliceerd op: <?php echo $dier[8]->Datum; ?>
+            <p></p> 
 
-
+            <!-- Foto  -->
             <img class="img-fluid rounded" src="<?php echo 'admin' . DS . $foto->picture_path(); ?>" alt="">
             <hr>
+
             <!-- Post Content -->
-            <?php echo $foto->description; ?>
+
+            Leeftijd: <?php echo $dier->Leeftijd; ?>
+            <br>
+            Geslacht: <?php echo $dier->Geslacht; ?>
+            <br>
+            Gesteriliseerd: <?php echo $dier->Gesteriliseerd; ?>
+            <br>
+            Ras: <?php echo $dier->Ras; ?>
+            <br>
+            Asiel: <?php echo $dier->Asiel; ?>
+            <br>
+            Geadopteerd: <?php echo $dier->Geadopteerd; ?>
+            <br>
+            Omschrijving:
+            <p>
+            <?php echo $dier->Omschrijving; ?>
+            </p>
             <hr>
 
             <!-- Comments Form -->

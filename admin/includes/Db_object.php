@@ -52,10 +52,14 @@ class Db_object
         return array_key_exists($the_attribute, $object_properties);
     }
 
+    // id met $ObjectID vervangen 
+    // $ObjectID met $db_table_field_id vervangen 
     public function save(){
         return isset($this->id) ? $this->update() : $this->create();
     }
 
+// id met $ObjectID vervangen 
+// $ObjectID met $db_table_field_id vervangen 
     public function create(){
         global $database;
         $properties = $this->clean_properties();
