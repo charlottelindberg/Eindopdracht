@@ -20,7 +20,7 @@ class Db_object
         return static::find_this_query("SELECT * FROM " . static::$db_table);
     }
 
-// $id met $objectid vervangen 
+    // $id met $objectid vervangen 
     public static function find_by_id($ObjectID, $ObjectIdColumnName){
         $result = static::find_this_query("SELECT * FROM " . static::$db_table . " WHERE " . $ObjectIdColumnName . "=$ObjectID LIMIT 1");
         return !empty($result) ? array_shift($result) : false;
@@ -54,12 +54,14 @@ class Db_object
 
     // id met $ObjectID vervangen 
     // $ObjectID met $db_table_field_id vervangen 
+    // reversed terug naar id 
     public function save(){
         return isset($this->id) ? $this->update() : $this->create();
     }
 
-// id met $ObjectID vervangen 
-// $ObjectID met $db_table_field_id vervangen 
+    // id met $ObjectID vervangen 
+    // $ObjectID met $db_table_field_id vervangen 
+    // reversed terug naar id 
     public function create(){
         global $database;
         $properties = $this->clean_properties();
@@ -87,7 +89,6 @@ class Db_object
         // probeer UPDATE met INSERT vervangen voor uploads
         $sql = "UPDATE " . static::$db_table . " SET ";
         $sql .= implode(",", $properties_assoc);
-        // echo $sql;
         $sql .= " WHERE " . static::$db_table_field_id . " = " . $database->escape_string($this->$db_table_field_id); # $this->FotoID vervangen
         // $sql .= " WHERE id = " . $database->escape_string($this->FotoID);
 
