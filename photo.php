@@ -23,14 +23,13 @@ if (isset($_POST['submit'])) {
 }
 
 $comments = Comment::find_the_comment($foto->FotoID);
+$dier = Dieren::find_by_id($_GET['id'], 'DierenID');
 
 // $dier = Dieren::find_by_id($_GET['id'], 'DierenID');
-
 // $dier = Dieren::find_the_animal();
-
-$new_dier = new Dieren;
+// $new_dier = new Dieren;
 // $dier = $new_dier->find_the_animal($_GET['id'], 'DierenID');
-$dier = $new_dier->find_all();
+// $dier = $new_dier->find_by_id();
 
 // var_dump($new_dier);
 // var_dump($dier);
@@ -46,7 +45,7 @@ $dier = $new_dier->find_all();
         <div class="col-lg-12">
 
             <!-- Title -->
-            <h1 class="mt-4"><?php echo $dier[0]->Naam; ?></h1>
+            <h1 class="mt-4"><?php echo $dier->Naam; ?></h1>
             
 
             <p class="lead">
@@ -55,7 +54,7 @@ $dier = $new_dier->find_all();
             <hr>
 
             <!-- Datuum includeren  -->
-            Gepubliceerd op: <?php echo $dier[8]->Datum; ?>
+            Gepubliceerd op: <?php echo $dier->Datum; ?>
             <p></p> 
 
             <!-- Foto  -->
@@ -64,21 +63,21 @@ $dier = $new_dier->find_all();
 
             <!-- Post Content -->
 
-            Leeftijd: <?php echo $dier[1]->Leeftijd; ?>
+            Leeftijd: <?php echo $dier->Leeftijd; ?> jaar
             <br>
-            Geslacht: <?php echo $dier[2]->Geslacht; ?>
+            Geslacht: <?php echo $dier->Geslacht; ?>
             <br>
             Gesteriliseerd: <?php echo $dier->Gesteriliseerd; ?>
             <br>
-            Ras: <?php echo $dier[4]->Ras; ?>
+            Ras: <?php echo $dier->Ras; ?>
             <br>
-            Asiel: <?php echo $dier[6]->Asiel; ?>
+            Asiel: <?php echo $dier->Asiel; ?>
             <br>
-            Geadopteerd: <?php echo $dier[7]->Geadopteerd; ?>
+            <!-- Geadopteerd: <?php echo $dier->Geadopteerd; ?> -->
             <br>
             Omschrijving:
             <p>
-            <?php echo $dier[5]->Omschrijving; ?>
+            <?php echo $dier->Omschrijving; ?>
             </p>
             <hr>
 
