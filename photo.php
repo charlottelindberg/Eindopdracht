@@ -65,14 +65,16 @@ $dier = Dieren::find_by_id($_GET['id'], 'DierenID');
 
             Leeftijd: <?php echo $dier->Leeftijd; ?> jaar
             <br>
-            Geslacht: <?php echo $dier->Geslacht; ?>
+            Geslacht: <?php echo ($dier->Geslacht == 1 ? 'Manneke' : 'Vrouwke'); 
+            
+            ?>
             <br>
-            Gesteriliseerd: <?php echo $dier->Gesteriliseerd; ?>
+            Gesteriliseerd: <?php echo ($dier->Gesteriliseerd == 1 ? 'Ja' : 'Nee'); ?>
             <br>
             Ras: <?php echo $dier->Ras; ?>
             <br>
-            Asiel: <?php echo $dier->Asiel; ?>
-            <br>
+            <!-- Asiel: <?php echo $dier->Asiel; ?> -->
+            <!-- <br> -->
             <!-- Geadopteerd: <?php echo $dier->Geadopteerd; ?> -->
             <br>
             Omschrijving:
