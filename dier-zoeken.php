@@ -16,6 +16,9 @@ $sql .= "LIMIT {$items_per_page} ";
 $sql .= "OFFSET {$paginate->offset()}";
 
 $photos = Photo::find_this_query($sql);
+$new_dier = new Dieren;
+// $dier = $new_dier->find_the_animal($_GET['id'], 'DierenID');
+$dier = $new_dier->find_all();
 ?>
 
 <p></p>
@@ -29,8 +32,8 @@ $photos = Photo::find_this_query($sql);
             <img class="card-img-top" src="<?php echo 'admin' . DS . $photo->picture_path(); ?>" alt="" class="img-fluid">
         </a>
         <div class="card-body">
-            <h5 class="card-title">Card title - PHP</h5>
-            <p class="card-text">Dier omschrijving - PHP</p>
+            <h5 class="card-title"><?php echo $dier[1]->Naam; ?></h5>
+            <p class="card-text"><?php echo $dier[5]->Omschrijving; ?></p>
         </div>
     </div>
 
