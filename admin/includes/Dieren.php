@@ -34,14 +34,19 @@ class Dieren extends Db_object
     }
 
     // $sql .= " WHERE DierenID = " . $database->escape_string($DierenID); VERVANGE DOOR $sql .= " WHERE " . static::$db_table_field_id . " = " . $database->escape_string($this->$db_table_field_id);
+    // public static function find_the_animal($DierenID){
+    //     global $database;
+    //     $sql = "SELECT * FROM " . self::$db_table;
+    //     $sql .= " WHERE DierenID = " . $database->escape_string($DierenID);
+    //     $sql .= " ORDER BY DierenID ASC";
+    //     // echo $sql;
+    //     return self::find_this_query($sql);
+    // }
+
     public static function find_the_animal($DierenID){
-        global $database;
-        $sql = "SELECT * FROM " . self::$db_table;
-        $sql .= " WHERE DierenID = " . $database->escape_string($DierenID);
-        $sql .= " ORDER BY DierenID ASC";
-        // echo $sql;
-        return self::find_this_query($sql);
+		return self::find_by_id($DierenID, 'DierenID');
     }
+
 
     public static function create_animal($Naam, $Leeftijd, $Geslacht, $Gesteriliseerd, $Ras, $Omschrijving, $Asiel, $Geadopteerd, $Datum){
         $dier = new Dieren();
