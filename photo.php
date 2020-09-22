@@ -29,7 +29,9 @@ $comments = Comment::find_the_comment($foto->FotoID);
 // $dier = Dieren::find_the_animal();
 
 $new_dier = new Dieren;
-$dier = $new_dier->find_the_animal($_GET['id'], 'DierenID');
+// $dier = $new_dier->find_the_animal($_GET['id'], 'DierenID');
+$dier = $new_dier->find_all();
+
 // var_dump($new_dier);
 // var_dump($dier);
 // echo $dier[0]->Naam;
@@ -62,21 +64,21 @@ $dier = $new_dier->find_the_animal($_GET['id'], 'DierenID');
 
             <!-- Post Content -->
 
-            Leeftijd: <?php echo $dier->Leeftijd; ?>
+            Leeftijd: <?php echo $dier[1]->Leeftijd; ?>
             <br>
-            Geslacht: <?php echo $dier->Geslacht; ?>
+            Geslacht: <?php echo $dier[2]->Geslacht; ?>
             <br>
             Gesteriliseerd: <?php echo $dier->Gesteriliseerd; ?>
             <br>
-            Ras: <?php echo $dier->Ras; ?>
+            Ras: <?php echo $dier[4]->Ras; ?>
             <br>
-            Asiel: <?php echo $dier->Asiel; ?>
+            Asiel: <?php echo $dier[6]->Asiel; ?>
             <br>
-            Geadopteerd: <?php echo $dier->Geadopteerd; ?>
+            Geadopteerd: <?php echo $dier[7]->Geadopteerd; ?>
             <br>
             Omschrijving:
             <p>
-            <?php echo $dier->Omschrijving; ?>
+            <?php echo $dier[5]->Omschrijving; ?>
             </p>
             <hr>
 
