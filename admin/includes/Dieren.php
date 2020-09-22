@@ -33,6 +33,7 @@ class Dieren extends Db_object
         }
     }
 
+    // $sql .= " WHERE DierenID = " . $database->escape_string($DierenID); VERVANGE DOOR $sql .= " WHERE " . static::$db_table_field_id . " = " . $database->escape_string($this->$db_table_field_id);
     public static function find_the_animal($DierenID){
         global $database;
         $sql = "SELECT * FROM " . self::$db_table;
@@ -68,39 +69,5 @@ class Dieren extends Db_object
             }   
         }
     }
-
-
-    // public function save(){
-    //     if($this->Naam){
-    //         $this->create(); # update() vervangen door create()
-    //     }else{
-    //         if(!empty($this->errors)){
-    //             return false;
-    //         }
-    //         if(empty($this->Naam) || empty($this->temp_path)){
-    //             $this->errors[] = "File not available";
-    //             return false;
-    //         }
-    //         $target_path = SITE_ROOT . DS . 'admin' . DS . $this->upload_directory . DS . $this->Naam;
-
-    //         if(file_exists($target_path)){
-    //             $this->errors[] = "File {$this->Naam} exists";
-    //             return false;
-    //         }
-    //         if(move_uploaded_file($this->tmp_path, $target_path)){
-    //             if($this->create()){
-    //                 unset($this->tmp_path);
-    //                 return true;
-    //             }
-    //         }else{
-    //             $this->errors[] = "This folder has no write rights";
-    //             return false;
-    //         }
-    //     }
-    // }
-
-    // public function picture_path(){
-    //     return $this->upload_directory.DS.$this->Naam;
-    // }
 
 }
