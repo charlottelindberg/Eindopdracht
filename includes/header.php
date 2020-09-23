@@ -37,17 +37,17 @@ require_once ("admin/includes/init.php");
 
     <!-- begin Navbar  -->
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php">
         <img src="./images/logo.png" width="155" height="50" alt="logo" loading="lazy">
         </a>
                <ul class="navbar-nav mr-auto">
-                <li class="navbar-text text-black-50">
+                <li class="navbar-text text-black-50 lead">
                Vind een dier!
                 </li>
             </ul>
        
             <span class="navbar-text">
-                <a class="nav-link text-black-50" href="../../Eindopdracht/admin/login.php">Aanmelden</a>
+                <a class="nav-link text-black-50 small" href="../../Eindopdracht/admin/login.php">Aanmelden</a>
             </span>
         </div>
     </nav>
