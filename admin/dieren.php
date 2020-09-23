@@ -44,9 +44,9 @@ $foto = Photo::find_all();
                         </a></td>
 
                         <!-- buttons  -->
-                    <td><a href="edit_photo.php?id=<?php echo $photo->FotoID; ?>"
+                    <td><a href="edit_dier.php?id=<?php echo $photo->FotoID; ?>"
                            class="btn btn-danger rounded-0"><i class="fas fa-edit"></i></a></td>
-                    <td><a href="delete_photo.php?id=<?php echo $photo->FotoID; ?>"
+                    <td><a href="delete_dier.php?id=<?php echo $photo->FotoID; ?>"
                            class="btn btn-danger rounded-0"><i class="fas fa-trash-alt"></i></a></td>
                     <td><a href="../photo.php?id=<?php echo $photo->FotoID; ?>"
                            class="btn btn-danger rounded-0"><i class="fas fa-eye"></i></a></td>
