@@ -1,6 +1,5 @@
 <?php
 include("includes/header.php");
-// require_once ("admin/includes/init.php");
 
 
 $foto = Photo::find_by_id($_GET['id'], 'FotoID');
@@ -24,16 +23,6 @@ if (isset($_POST['submit'])) {
 
 $comments = Comment::find_the_comment($foto->FotoID);
 $dier = Dieren::find_by_id($_GET['id'], 'DierenID');
-
-// $dier = Dieren::find_by_id($_GET['id'], 'DierenID');
-// $dier = Dieren::find_the_animal();
-// $new_dier = new Dieren;
-// $dier = $new_dier->find_the_animal($_GET['id'], 'DierenID');
-// $dier = $new_dier->find_by_id();
-
-// var_dump($new_dier);
-// var_dump($dier);
-// echo $dier[0]->Naam;
 
 ?>
 <!-- Page Content -->
@@ -90,11 +79,11 @@ $dier = Dieren::find_by_id($_GET['id'], 'DierenID');
                     <form method="post">
                         <div class="form-group">
                             <br>
-                            <label for="Gebruiker"> Gebruikernaam:</label>
+                            <label for="Gebruiker">Gebruikernaam:</label>
                             <input type="text" name="Gebruiker" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="Bericht"> Bericht:</label>
+                            <label for="Bericht">Bericht:</label>
                             <textarea class="form-control" name="Bericht" rows="3"></textarea>
                         </div>
                         <button type="submit" name="submit" class="btn btn-secondary btn-block">Submit</button>
@@ -108,9 +97,6 @@ $dier = Dieren::find_by_id($_GET['id'], 'DierenID');
 
                     <div class="media-body">
                         <h5 class="mt-0"><?php echo $comment->Gebruiker; ?>
-
-                            <!-- tekst 'op foto' includeren  -->
-                            <!-- op foto <?php echo $comment->FotoID; ?> -->
                         </h5>
                         <p><?php echo $comment->Bericht; ?></p>
                         <hr>
