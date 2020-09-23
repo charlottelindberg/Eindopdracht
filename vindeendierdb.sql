@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2020 at 04:06 PM
+-- Generation Time: Sep 23, 2020 at 06:40 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -73,7 +73,6 @@ CREATE TABLE `dieren` (
   `Gesteriliseerd` int(11) NOT NULL,
   `Ras` varchar(100) NOT NULL,
   `Omschrijving` text NOT NULL,
-  `Diersoort` int(11) NOT NULL,
   `Asiel` int(11) NOT NULL,
   `Geadopteerd` int(11) NOT NULL,
   `Datum` date NOT NULL DEFAULT current_timestamp()
@@ -83,17 +82,36 @@ CREATE TABLE `dieren` (
 -- Dumping data for table `dieren`
 --
 
-INSERT INTO `dieren` (`DierenID`, `Naam`, `Leeftijd`, `Geslacht`, `Gesteriliseerd`, `Ras`, `Omschrijving`, `Diersoort`, `Asiel`, `Geadopteerd`, `Datum`) VALUES
-(1, '', '3 jaar', 0, 1, 'Franse Bulldog', 'Vicky werd in beslag genomen. Ze zat in een vieze ren, buiten.\r\n\r\nDeze Franse bulldog van december 2014 mag via het asiel op zoek gaan naar een nieuwe thuis.\r\n\r\nWij hebben Vicky leren kennen als een hevige, energieke, intelligente jongedame. Lekker samen met haar baasje actief bezig zijn, maar ook heerlijk kunnen knuffelen.\r\n\r\nZe is zelfzeker, bedient zichzelf en haalt de hele speelgoeddoos overhoop. Ze ging letterlijk in de speelgoeddoos staan, om op die manier alle spullen gemakkelijk eruit te kunnen halen. Ze blijkt dan ook absoluut zot te zijn van speeltjes: piepers, balletjes, touwen; wat dan ook.\r\n\r\nZe springt erbij in de zetel en gooit zich op haar zij om geknuffeld te worden. Wanneer we de kastdeur openden om er koekjes uit te pakken, zat Vicky in de kast voordat de deuren geopend waren. Ze wil overal bij zijn met haar snuit!\r\n\r\nSpeuren vindt ze ook fantastisch. Ideaal om haar mentaal moe te maken.\r\n\r\nVoor deze dame zoeken we naar mensen zonder andere dieren. Ervaring met de Mechelaar zou ideaal zijn, maar indien er graag actieve mensen zijn die interesse tonen in Vicky, is dat zeker een optie.\r\n', 1, 2, 1, '2020-09-04'),
-(2, 'Meisy', '2', 2, 1, 'Huiskat, Korthaarig', '<p>HELLO 123</p>\r\n<p>YEAH</p>', 2, 0, 0, '0000-00-00'),
-(3, 'Buster', '4', 1, 1, 'Britse bulldog', '<p>hey</p>\r\n<p>123</p>\r\n<p>hello world</p>', 1, 3, 2, '0000-00-00'),
-(4, 'Narnia', '8', 2, 2, 'Pony', '<p>paard</p>\r\n<p>paard</p>\r\n<p>paard</p>', 4, 6, 2, '2020-09-21'),
-(5, 'Kellog', '4', 1, 2, 'Pomerol', '<p>HOnd</p>\r\n<p>hond hond</p>\r\n<p>hond</p>', 1, 4, 2, '2020-09-21'),
-(6, 'Hawaii', '1', 2, 1, 'Naaktkat', '<p>Naakt kat</p>\r\n<p>kat</p>', 0, 7, 2, '2020-09-21'),
-(7, 'Honululu', '18', 1, 2, 'Naaktkat', '<p>kAT</p>\r\n<p>nAAKT</p>\r\n<p>AKAT</p>', 0, 7, 2, '2020-09-21'),
-(8, 'Binky', '7', 2, 1, 'Pomerol', '<p>hond</p>\r\n<p>hond</p>\r\n<p>hond</p>', 0, 5, 1, '2020-09-21'),
-(9, 'Blackie', '6', 0, 0, '', '', 0, 0, 0, '0000-00-00'),
-(10, 'Blackie', '6', 0, 0, '', '', 0, 0, 0, '0000-00-00');
+INSERT INTO `dieren` (`DierenID`, `Naam`, `Leeftijd`, `Geslacht`, `Gesteriliseerd`, `Ras`, `Omschrijving`, `Asiel`, `Geadopteerd`, `Datum`) VALUES
+(1, 'Rudy', '3', 2, 1, 'Franse Bulldog', 'Vicky werd in beslag genomen. Ze zat in een vieze ren, buiten.\r\n\r\nDeze Franse bulldog van december 2014 mag via het asiel op zoek gaan naar een nieuwe thuis.\r\n\r\nWij hebben Vicky leren kennen als een hevige, energieke, intelligente jongedame. Lekker samen met haar baasje actief bezig zijn, maar ook heerlijk kunnen knuffelen.\r\n\r\nZe is zelfzeker, bedient zichzelf en haalt de hele speelgoeddoos overhoop. Ze ging letterlijk in de speelgoeddoos staan, om op die manier alle spullen gemakkelijk eruit te kunnen halen. Ze blijkt dan ook absoluut zot te zijn van speeltjes: piepers, balletjes, touwen; wat dan ook.\r\n\r\nZe springt erbij in de zetel en gooit zich op haar zij om geknuffeld te worden. Wanneer we de kastdeur openden om er koekjes uit te pakken, zat Vicky in de kast voordat de deuren geopend waren. Ze wil overal bij zijn met haar snuit!\r\n\r\nSpeuren vindt ze ook fantastisch. Ideaal om haar mentaal moe te maken.\r\n\r\nVoor deze dame zoeken we naar mensen zonder andere dieren. Ervaring met de Mechelaar zou ideaal zijn, maar indien er graag actieve mensen zijn die interesse tonen in Vicky, is dat zeker een optie.\r\n', 2, 1, '2020-09-04'),
+(2, 'Meisy', '2', 2, 1, 'Huiskat, Korthaarig', '<p>HELLO 123</p>\r\n<p>YEAH</p>', 2, 1, '2020-09-20'),
+(3, 'Buster', '4', 1, 1, 'Britse bulldog', '<p>hey</p>\r\n<p>123</p>\r\n<p>hello world</p>', 3, 2, '2020-09-21'),
+(4, 'Narnia', '8', 2, 2, 'Pony', '<p>paard</p>\r\n<p>paard</p>\r\n<p>paard</p>', 6, 2, '2020-09-21'),
+(5, 'Kellog', '4', 1, 2, 'Pomerol', '<p>HOnd</p>\r\n<p>hond hond</p>\r\n<p>hond</p>', 4, 2, '2020-09-21'),
+(6, 'Hawaii', '1', 2, 1, 'Naaktkat', '<p>Naakt kat</p>\r\n<p>kat</p>', 7, 2, '2020-09-21'),
+(7, 'Honululu', '18', 1, 2, 'Naaktkat', '<p>kAT</p>\r\n<p>nAAKT</p>\r\n<p>AKAT</p>', 7, 2, '2020-09-21'),
+(8, 'Binky', '7', 2, 1, 'Pomerol', '<p>hond</p>\r\n<p>hond</p>\r\n<p>hond</p>', 5, 1, '2020-09-21'),
+(11, 'Tracer', '36', 1, 1, 'Golden Retriever', '<p>Tracer is een schattige, nieuwsgierige madmeke.<br />Ze heeft graag kinderen, en kan goed met andere dieren omgaan.</p>\r\n<p>Reden voor afstand komt door de nieuwe woonsituatie van de familie.</p>', 4, 1, '2020-09-22'),
+(12, 'Bertje', '2', 1, 1, 'Poedel', 'Much dog. Much fluff.', 2, 1, '2020-09-22'),
+(13, 'Diego', '4', 1, 1, 'Britse hangoor', 'Schuw, bang, voorzichtig.', 4, 2, '2020-09-22'),
+(14, 'SpongeBob', '45', 1, 1, 'Franse hangoor', 'Schuw, bang, voorzichtig.', 2, 2, '2020-09-22'),
+(15, 'Squidward', '9', 1, 1, 'Grijze tijger', 'Schuw, bang, voorzichtig.', 2, 2, '2020-09-22'),
+(16, 'Patrick', '6', 1, 1, 'Grijze tijger', 'Schuw, bang, voorzichtig.', 2, 2, '2020-09-22'),
+(17, 'Honey', '1', 1, 1, 'Grijze tijger', 'Schattig, lief, kan goed met kinderen omgaan.', 2, 2, '2020-09-22'),
+(18, 'Bender', '1', 1, 1, 'Grijze tijger', 'Schattig, lief, kan goed met kinderen omgaan.', 2, 2, '2020-09-22'),
+(19, 'Fry', '1', 1, 1, 'Grijze tijger', 'Schattig, lief, kan goed met kinderen omgaan.', 2, 2, '2020-09-22'),
+(20, 'Leela', '1', 1, 1, 'Grijze tijger', 'Schattig, lief, kan goed met kinderen omgaan.', 2, 2, '2020-09-22'),
+(21, 'Han Solo', '1', 1, 1, 'Grijze tijger', 'I know.', 2, 2, '2020-09-22'),
+(22, 'Yoda', '1', 1, 1, 'Grijze tijger', 'Do or do not. Hmm?', 2, 2, '2020-09-22'),
+(23, 'Luke', '1', 1, 1, 'Grijze tijger', 'Nooooooooo!!!', 2, 2, '2020-09-22'),
+(24, 'Leia', '1', 1, 1, 'Grijze tijger', 'Help me, Obi-Wan Kenobi.', 2, 2, '2020-09-22'),
+(25, 'Method Man', '1', 1, 1, 'Bengalse schaaphond', 'Enter the 36 Chambers.', 2, 2, '2020-09-22'),
+(26, 'Rodman', '1', 1, 1, 'Bengalse schaaphond', 'Hoop hoop.', 2, 2, '2020-09-22'),
+(27, 'Jackman', '1', 1, 1, 'Wolverine', 'Claaaaws!', 2, 2, '2020-09-22'),
+(28, 'Cartman', '1', 1, 1, 'Wolverine', 'Muuuuuuuuum!', 2, 2, '2020-09-22'),
+(29, 'Bartman', '1', 1, 1, 'Langharige schaap', 'Eat My Shorts!', 2, 2, '2020-09-22'),
+(30, 'Sp9rk1e', '1', 1, 1, 'Genji', 'Nano?', 2, 2, '2020-09-22'),
+(31, 'Super', '1', 1, 1, 'Reinhardt', 'Beer!', 2, 2, '2020-09-22');
 
 -- --------------------------------------------------------
 
@@ -156,10 +174,9 @@ INSERT INTO `foto` (`FotoID`, `Bestandsnaam`, `Dier_ID`) VALUES
 (24, 'schaap01.jpg', 4),
 (25, 'geit01.jpg', 4),
 (26, 'alpaca01.jpg', 4),
-(27, '', 0),
 (28, 'naakt-kat.jpg', 2),
-(29, 'naakt-kat.jpg', 2),
-(30, 'hond05.jpg', 1);
+(30, 'hond05.jpg', 1),
+(31, 'hond07.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -248,7 +265,7 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `dieren`
 --
 ALTER TABLE `dieren`
-  MODIFY `DierenID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `DierenID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `diersoort`
@@ -260,7 +277,7 @@ ALTER TABLE `diersoort`
 -- AUTO_INCREMENT for table `foto`
 --
 ALTER TABLE `foto`
-  MODIFY `FotoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `FotoID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `gebruikers`
