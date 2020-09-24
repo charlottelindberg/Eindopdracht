@@ -22,38 +22,23 @@
     <!-- Divider -->
     <hr class="sidebar-divider">
 
-
     <li class="nav-item">
-        <a class="nav-link" href="users.php">
-
+        <a class="nav-link" href="gebruikers.php">
             <span>Gebruikers</span>
             <i class="fas fa-user"></i></a>
-
     </li>
 
     <li class="nav-item">
         <a class="nav-link" href="dieren.php">
-
             <span>Dieren</span>
             <i class="fas fa-cat"></i></a>
-
     </li>
 
     <li class="nav-item">
         <a class="nav-link" href="comments.php">
-
             <span>Kommentaren</span>
             <i class="fas fa-comments"></i></a>
-
     </li>
-
-<!-- <li class="nav-item">
-        <a class="nav-link" href="upload.php">
-
-            <span>Upload</span>
-            <i class="fas fa-upload"></i></a>
-
-    </li> -->
 
 </ul>
 <!-- End of Sidebar -->
