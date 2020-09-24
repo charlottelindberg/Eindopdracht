@@ -5,40 +5,37 @@
 include("includes/header.php");
 include("includes/top-filter.php");
 
+//Set up a Paginate object
 $page = !empty($_GET['page']) ? (int)$_GET['page'] : 1;
 $items_per_page = 6;
-$items_total_count = Photo::count_all();
+$paginate = new Paginate($page, $items_per_page);
 
-$paginate = new Paginate($page, $items_per_page, $items_total_count);
+//Lookup dieren with the Paginate as input
+$dieren = Dieren::find_per_page($paginate);
 
-$sql = "SELECT * FROM foto ";
-$sql .= "LIMIT {$items_per_page} ";
-$sql .= "OFFSET {$paginate->offset()}";
+//Lookup all photos
+$photos = Photo::find_all();
 
-$photos = Photo::find_this_query($sql);
-// $dier = Dieren::find_by_id($_GET['id'], 'DierenID');
-// $dier = Dieren::find_the_animal($_GET['id']); 
 
-$new_dier = new Dieren;
-// $dier = $new_dier->find_the_animal($_GET['id'], 'DierenID');
-$dier = $new_dier->find_all();  
-// $dier = Dieren::find_all();
 
 ?>
 
 <p></p>
 
 <div class="card-columns">
-<?php foreach ($photos as $photo) : ?>
-
-
+<?php 
+	foreach ($dieren as $dier) : 
+		$photo = $dier->find_matching_photo($photos);
+?>
     <div class="card">
-        <a href="photo.php?id=<?php echo $photo->FotoID; ?>">
-            <img class="card-img-top" src="<?php echo 'admin' . DS . $photo->picture_path(); ?>" alt="" class="img-fluid">
-        </a>
+    	<?php if($photo != null) : ?>
+        	<a href="photo.php?id=<?php $photo->FotoID?>">
+            	<img class="card-img-top" src="<?php echo 'admin' . DS . $photo->picture_path(); ?>" alt="" class="img-fluid">
+        	</a>
+        <?php endif; ?>
         <div class="card-body">
             <h5 class="card-title"><?php echo $dier->Naam; ?></h5>
-            <p class="card-text"><?php echo $dier->Omschrijving; ?></p>
+            <!-- <p class="card-text"><?php echo $dier->Omschrijving; ?></p> -->
         </div>
     </div>
 
@@ -53,11 +50,11 @@ $dier = $new_dier->find_all();
     <div class="col-12">
         <ul class="pagination ">
             <?php
-            if ($paginate->page_total() > 1) {
+            if ($paginate->total_pages > 1) {
                 if ($paginate->has_next()) {
                     echo "<li class='next'><a href='dier-zoeken.php?page={$paginate->next()}'>Next</a></li>";
                 }
-                for ($i = 1; $i <= $paginate->page_total(); $i++) {
+                for ($i = 1; $i <= $paginate->total_pages; $i++) {
                     if ($i == $paginate->current_page) {
                         echo "<li class='active'><a href='dier-zoeken.php?page={$i}'> {$i} </a> </li>";
                     } else {
