@@ -9,8 +9,8 @@ $photos = Photo::find_this_query($sql);
 
 // aantal dieren in databank 
 $berekening = "SELECT COUNT(dierenID) AS TOTAL FROM dieren WHERE Geadopteerd = 1;";
-$aantalDieren = $database->query($berekening);
-if ($aantalDieren->num_rows > 0) {
+$antaalDieren = $database->query($berekening);
+if ($antaalDieren->num_rows > 0) {
     $rij = $antaalDieren->fetch_assoc();
     $totalAnimals = $rij['TOTAL'];
 } else {
