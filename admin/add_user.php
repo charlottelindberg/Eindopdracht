@@ -26,7 +26,7 @@ if(!$session->is_signed_in()){
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <h2>Welkom op de 'User Toevoegen' pagina</h2>
+            <h2>Voeg een nieuwe gebruiker toe</h2>
             <form action="add_user.php" method="post" enctype="multipart/form-data">
                 <div class="col-md-8">
                     <div class="form-group">

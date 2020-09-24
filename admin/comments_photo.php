@@ -22,7 +22,6 @@ $comments = Comment::find_the_comment($_GET['id'], 'CommentID');
                 <tr>
                     <th>Gebruiker</th>
                     <th>Bericht</th>
-                    <th>Delete?</th>
                 </tr>
                 </thead>
                 <tbody>

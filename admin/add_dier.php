@@ -4,16 +4,6 @@ if(!$session->is_signed_in()){
     redirect('login.php');
 }
 
-$foto = new Photo();
-if(isset($_POST['submit'])){
-    if($foto){
-        $foto->Bestandsnaam = $_POST['Bestandsnaam'];
-        $foto->Dier_ID = $_POST['Dier_ID'];
-        $foto->set_file($_FILES['file']);
-        $foto->create();
-    }
-}
-
     $dier = new Dieren();
     if(isset($_POST['submit'])){
         if($dier){
@@ -26,11 +16,19 @@ if(isset($_POST['submit'])){
             $dier->Asiel = $_POST['Asiel'];
             $dier->Geadopteerd = $_POST['Geadopteerd'];
             $dier->Datum = $_POST['Datum'];
-
-            // $dier->set_file($_FILES['file']);
             $dier->create();
         }
     }
+
+    $foto = new Photo();
+if(isset($_POST['submit'])){
+    if($foto){
+        $foto->Bestandsnaam = $_POST['Bestandsnaam'];
+        $foto->Dier_ID = $_POST['Dier_ID'];
+        $foto->set_file($_FILES['file']);
+        $foto->create();
+    }
+}
 ?>
 
 <?php include("includes/sidebar.php"); ?>

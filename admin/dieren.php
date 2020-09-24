@@ -23,8 +23,6 @@ $foto = Photo::find_all();
                     <th>Bestandsnaam</th>
                     <th>Dierensoort</th>
                     <th>Comments</th>
-                    <th>Wijzig?</th>
-                    <th>Delete?</th>
                     <th>View?</th>
                 </tr>
                 </thead>
@@ -44,10 +42,6 @@ $foto = Photo::find_all();
                         </a></td>
 
                         <!-- buttons  -->
-                    <td><a href="edit_dier.php?id=<?php echo $photo->FotoID; ?>"
-                           class="btn btn-danger rounded-0"><i class="fas fa-edit"></i></a></td>
-                    <td><a href="delete_dier.php?id=<?php echo $photo->FotoID; ?>"
-                           class="btn btn-danger rounded-0"><i class="fas fa-trash-alt"></i></a></td>
                     <td><a href="../photo.php?id=<?php echo $photo->FotoID; ?>"
                            class="btn btn-danger rounded-0"><i class="fas fa-eye"></i></a></td>
                 </tr>
