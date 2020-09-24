@@ -7,6 +7,15 @@ $sql .= "LIMIT 9;";
 
 $photos = Photo::find_this_query($sql);
 
+$berekening = "SELECT COUNT(dierenID) AS TOTAL FROM dieren WHERE Geadopteerd = 1;";
+$antaalDieren = $database->query($berekening);
+if ($antaalDieren->num_rows > 0) {
+    $rij = $antaalDieren->fetch_assoc();
+    $totalAnimals = $rij['TOTAL'];
+} else {
+
+}
+
 ?>
 
 
@@ -17,7 +26,7 @@ $photos = Photo::find_this_query($sql);
             <h1 class="text-center pt-3">Vind <strong>jouw</strong> dier!</h1>
 
             <!-- insert php code ipv static nummer -->
-            <p class="text-center">Momenteel zijn er <strong>709</strong> dieren beschikkbaar voor adoptie</p>
+            <p class="text-center">Momenteel zijn er <strong><?php echo $totalAnimals ;?></strong> dieren beschikkbaar voor adoptie</p>
 
 
             <hr>
