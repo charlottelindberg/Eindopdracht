@@ -15,6 +15,18 @@ class Db_object
         UPLOAD_ERR_CANT_WRITE => "Failed to write to disk",
         UPLOAD_ERR_EXTENSION => "A php extension stopped your upload"
     );
+    
+
+    public static function find_per_page($paginate){   	
+    	//Execute a query with LIMIT and OFFSET clauses representing the $paging parameter
+        $results = static::find_this_query("SELECT * FROM " . static::$db_table . " LIMIT {$paginate->items_per_page} OFFSET {$paginate->offset()}");
+        
+        //Let Paging calculate the total number of pages by passing in the total number of items
+        $paginate->calculate_total_pages(static::count_all());
+        
+        //Return the results
+        return $results;
+    }    
 
     public static function find_all(){
         return static::find_this_query("SELECT * FROM " . static::$db_table);
