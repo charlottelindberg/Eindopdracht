@@ -3,11 +3,12 @@
 
 <?php
 include("includes/header.php");
-include("includes/top-filter.php");
+// include("includes/top-filter.php");
+// top-filter werkt nog niet, en ziet er niet mooi uit in mobile
 
 //Set up a Paginate object
 $page = !empty($_GET['page']) ? (int)$_GET['page'] : 1;
-$items_per_page = 6;
+$items_per_page = 9;
 $paginate = new Paginate($page, $items_per_page);
 
 //Lookup dieren with the Paginate as input
@@ -29,13 +30,13 @@ $photos = Photo::find_all();
 ?>
     <div class="card">
     	<?php if($photo != null) : ?>
-        	<a href="photo.php?id=<?php $photo->FotoID?>">
-            	<img class="card-img-top" src="<?php echo 'admin' . DS . $photo->picture_path(); ?>" alt="" class="img-fluid">
+        	<a href="photo.php?id=<?php echo $photo->FotoID?>" class="stretched-link">
+            	<img class="card-img-top" src="<?php echo 'admin' . DS . $photo->picture_path(); ?>" class="img-fluid">
         	</a>
         <?php endif; ?>
         <div class="card-body">
             <h5 class="card-title"><?php echo $dier->Naam; ?></h5>
-            <!-- <p class="card-text"><?php echo $dier->Omschrijving; ?></p> -->
+            <div class="card-text text-truncate"><?php echo $dier->Omschrijving; ?></div>
         </div>
     </div>
 
@@ -48,21 +49,22 @@ $photos = Photo::find_all();
 
 <div class="row ">
     <div class="col-12">
-        <ul class="pagination ">
+        <ul class="pagination">
             <?php
             if ($paginate->total_pages > 1) {
-                if ($paginate->has_next()) {
-                    echo "<li class='next'><a href='dier-zoeken.php?page={$paginate->next()}'>Next</a></li>";
+                if ($paginate->has_previous()) {
+                    echo "<li class='page-item'><a href='dier-zoeken.php?page={$paginate->previous()}'>Previous</a></li> ";
                 }
+                
                 for ($i = 1; $i <= $paginate->total_pages; $i++) {
                     if ($i == $paginate->current_page) {
-                        echo "<li class='active'><a href='dier-zoeken.php?page={$i}'> {$i} </a> </li>";
+                        echo "<li class='page-item active'><a href='dier-zoeken.php?page={$i}'> {$i} </a> </li>";
                     } else {
                         echo "<li><a href='dier-zoeken.php?page={$i}'> {$i} </a> </li>";
                     }
                 }
-                if ($paginate->has_previous()) {
-                    echo "<li class='previous'><a href='dier-zoeken.php?page={$paginate->previous()}'>Previous</a></li>";
+                if ($paginate->has_next()) {
+                    echo "<li class='page-item'><a href='dier-zoeken.php?page={$paginate->next()}'>Next</a></li>";
                 }
             }
             ?>
