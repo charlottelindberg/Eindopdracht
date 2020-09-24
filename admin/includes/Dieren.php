@@ -4,7 +4,7 @@
 class Dieren extends Db_object
 {
     protected static $db_table = "dieren";
-    protected static $db_table_fields = array('Naam', 'Leeftijd', 'Geslacht', 'Gesteriliseerd', 'Ras', 'Descriptie', 'Asiel', 'Geadopteerd', 'Datum');
+    protected static $db_table_fields = array('Naam', 'Leeftijd', 'Geslacht', 'Gesteriliseerd', 'Ras', 'Omschrijving', 'Asiel', 'Geadopteerd', 'Datum');
     public $DierenID;
     public $Naam;
     public $Leeftijd;
@@ -77,7 +77,7 @@ class Dieren extends Db_object
     
     public function find_matching_photo($photos){
     	foreach($photos as $photo){
-    		if($photo->Dier_ID == $this->DierenID){
+    		if($photo->FotoID == $this->DierenID){
     			return $photo;
     		}
     	}
